@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src\views\imagens\Mídia-Photoroom.jpg">
     <title>Tela de Login</title>
 
     <link rel="stylesheet" href="./src/views/style.css">
@@ -17,7 +18,7 @@
 <body>
 <main class="login-form">
         <form method="POST" action="./src/views/Main.php">
-            <h1 class="h3 mb-3 fw-normal text-center">Fazer Login</h1>
+            <h1 class="h3 mb-3 fw-normal text-center"><span class="F">Fazer Login</span></h1>
             
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingInput" placeholder="Usuário" name="usuario">
@@ -30,7 +31,7 @@
             
             <div class="checkbox mb-3">
                 <label>
-                    <input type="checkbox" value="remember-me"> Lembre de mim
+                    <input type="checkbox" value="remember-me"><span class="F">Lembre de mim</span>
                 </label>
             </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
