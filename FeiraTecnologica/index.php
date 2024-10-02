@@ -15,7 +15,19 @@
 
     
 </head>
-<body>
+<body> 
+    <div class="top">
+        <p>.</p>
+    </div>
+    <div class="sp">
+        <span class="Vd"><p>Verde</span><span class="Ca">Calc</P></span>
+    </div>
+    
+    <div class="content">
+        <img src="./src/views/imagens/imagem.png" class="ic">
+    </div>
+    <div class="dark-overlay">
+
 <main class="login-form">
         <form method="POST" action="./src/views/Main.php">
             <h1 class="h3 mb-3 fw-normal text-center"><span class="F">Fazer Login</span></h1>
@@ -35,9 +47,10 @@
                 </label>
             </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
-            <p class="mt-5 mb-3 text-muted text-center">&copy; Alexander, Etec ZL, 2024</p>
+        
         </form>
     </main>
+</div>
 
 </body>
 </html>
