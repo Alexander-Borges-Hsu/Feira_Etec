@@ -37,37 +37,42 @@ document.addEventListener("DOMContentLoaded", function () {
     senha1.addEventListener('input', verificarVal);
     senha2.addEventListener('input', verificarVal);
 });
+    //Codigo do Form 2 para mudança de cor dos botões  -Davi
+   
+    const carroBtn = document.getElementById('carro-btn');
 
-const carroBtn = document.getElementById('carro-btn');
-       
-            const motoBtn = document.getElementById('moto-btn')
-       
-            let transporteSelecionado = "";
-       
-            carroBtn.addEventListener('click', function() {
-              transporteSelecionado = 'Carro';
-              carroBtn.classList.add('ativo');
-              motoBtn.classList.remove('ativo')
-       
-              motoBtn.addEventListener('click', function(){
-                transporteSelecionado = 'Moto';
-                motoBtn.classList.add('ativo');
-                carroBtn.classList.remove('ativo');
-              })
-            })
-            document.getElementById('formulario').addEventListener('submit', function(event) {
-          event.preventDefault();
-         
-          const kms = document.getElementById('kms').value;
-          const dias = document.getElementById('dias').value;
-          const combustivel = document.getElementById('combustivel').checked;
-         
-          if (kms && dias) {
-              alert(`Você rodou ${kms} kms em ${dias} dias. Combustível: ${combustivel ? 'Sim' : 'Não'}.`);
-          } else {
-              alert('Preencha todos os campos.');
-          }
-      });
+    const motoBtn = document.getElementById('moto-btn')
+
+
+    let transporteSelecionado ="";
+
+    carroBtn.addEventListener('click', function(){
+        transporteSelecionado= 'Carro';
+        carroBtn.classList.add('ativo');
+        motoBtn.classList.remove('ativo');
+    
+
+    motoBtn.addEventListener('click', function(){
+        transporteSelecionado = 'Moto'
+        motoBtn.classList.add('ativo')
+        carroBtn.classList.remove('ativo')
+    })
+   })
+
+    document.getElementById('formulario').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+
+    const kms = document.getElementById('kms').value;
+    const dias = document.getElementById('dias').value
+    const combustivel = document.getElementById('combustivel').checked;
+
+    if (kms && dias) {
+        alert('Você rodou', kms, 'kms em', dias, 'dias. Combustivel: ', combustivel,' .')
+    }   else {
+        alert('Preencha todos os campos. ')
+    }
+    })
 
       /* O Código acima foi feito pelo Davi*/
 
@@ -76,3 +81,5 @@ const carroBtn = document.getElementById('carro-btn');
     });
 
     /*O código acima foi feito para somente válidar numeros inteiros na página form1 em gás natural e em maços de cigarro*/
+
+    
