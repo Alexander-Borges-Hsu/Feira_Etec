@@ -4,11 +4,22 @@
 
     use APP\models\Usuario;
     use APP\persistence\ConnectionFactory;
+    
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $username = $_POST['usuario'];
+        $password = $_POST['senha'];
+        //As variáveis acima serão usadas para Select, e as variáveis abaixas serão usadas para Insert
 
-    $username = $_POST['usuario'];
-    $password = $_POST['senha'];
+        $NewUsername = $_POST['newusuario'];
+        $NewPassword = $_POST['newsenha'];
+        $ConfirmPassword = $_POST['newsenhaC'];
+        $NewEmail = $_POST['newemail'];
 
-    $sqlInsert = 'INSERT INTO usuario (usuario, senha) VALUES ("' . $username . '", "' . $password . '")';
+        header("Location: ../../index.html");
+        
+        }
+
+    $sqlInsert = 'INSERT INTO tbnew_usuario (newusuario, newsenha, newemail ) VALUES ("' . $NewUsername . '", "' . $NewPassword . '", "' . $NewEmail .'")';
 
     $conn = ConnectionFactory::getConnection();
     

@@ -3,7 +3,7 @@ namespace APP\persistence;
 
 class ConnectionFactory{
 
-    private static $db_name = "login";
+    private static $db_name = "bdlogin";
     private static $db_host = "127.0.0.1";
     private static $db_port = "3306";
     private static $db_username = "root";

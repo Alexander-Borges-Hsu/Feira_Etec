@@ -1,0 +1,12 @@
+Para a criacão do banco deve-se usar -
+create database bdlogin;
+
+ao entrar no Banco login -
+create table tbnew_usuario(
+    idUsuario int primary key AUTO_INCREMENT,
+    newusuario varchar(50),
+    newsenha varchar(30),
+    newemail varchar(50)
+
+    )
+

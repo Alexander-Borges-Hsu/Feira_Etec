@@ -23,10 +23,10 @@
         <span class="Vd"><p>Verde</span><span class="Ca">Calc</P></span>
     </div>
     <div class="content">
-        <img src="./src/views/imagens/imagem.png" class="ic">
+        <img src="./src/views/imagens/imagem.png" class="img-fluid" id="ic">
     </div>
     <div class="dark-overlay">
-
+        <!-- Formulário do login -->
         <form method="POST" action="./src/views/Main.php">
             <main class="login-form">
                 <div class="col-md-6 mx-auto p-0">
@@ -57,24 +57,25 @@
                                 <a href="#" class="esqueci">Esqueci a senha</a>
                             </div>
                         </div>
-                    </form>                    
+                    </form>       
+                    <!-- Formulário do cadastro              -->
                     <form method="POST" action="./src/views/Main.php">
                         <div class="sign-up-form">
                             <div class="group">
                                 <label for="user" class="label">Usuário</label>
-                                <input id="user" type="text" class="input" placeholder="Crie seu Usuário" required>
+                                <input id="user" type="text" class="input" placeholder="Crie seu Usuário" required name="newusuario">
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Senha</label>
-                                <input id="pass" type="password" class="input" data-type="password" placeholder="Crie sua senha" required>
+                                <input id="pass" type="password" class="input" data-type="password" placeholder="Crie sua senha" required name="newsenha">
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Confirmar Senha</label>
-                                <input id="pass" type="password" class="input" data-type="password" placeholder="Confirme sua senha" required>
+                                <input id="pass" type="password" class="input" data-type="password" placeholder="Confirme sua senha" required name="newsenhaC">
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Email</label>
-                                <input id="pass" type="text" class="input" placeholder="Coloque seu e-mail" required>
+                                <input id="pass" type="email" class="input" placeholder="Coloque seu e-mail" required name="newemail">
                             </div>
                             <div class="group">
                                 <input type="submit" class="button" value="Cadastrar">
