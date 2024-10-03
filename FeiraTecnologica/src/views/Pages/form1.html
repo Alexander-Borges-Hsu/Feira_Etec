@@ -51,34 +51,39 @@
     <!-- Formulário consumo eletrecidade              -->
     <main>
         <body>
-            <main>
-              <h1 class="ce">Consumo de eletrecidade</h1>
-              <section class="consumo-eletrecidade">
-                  <h2>Insira seu consumo mensal de eletrecidade</h2>
-                  <form id="formulario" class="informacoes-complementares">
-                      <label for="moneyInput">Digite seu consumo  mensal de energia:</label>
-                      <input type="text" id="moneyInput" placeholder="R$" style="width: 365px; height: 50px; border-radius: 10px;" required>
-                  </form>
-              </section>
-    <!-- Formulário consumo gás natural              -->
-            <h1 class="gas">Consumo de gás natural</h1>
-              <section class="gas-natural">
-                  <h2>Insira seu consumo de gás natural (gás de cozinha)</h2>
-                  <form id="formulario" class="formgas">
-                    <label for="integerInput">Digite seu consumo mensal de gás:</label>
-                    <input type="number" id="integerInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required>
-                  </form>
+          <main>
+            <h1 class="ce">Consumo de Eletrecidade</h1>
+          <section class="formulario">
+                <section class="consumo-eletrecidade">
+                <h2>Insira seu consumo mensal de eletricidade</h2>
+                <form id="formulario" class="informacoes-complementares">
+                    <label for="moneyInput">Digite seu consumo mensal de energia:</label>
+                    <input type="text" id="moneyInput" placeholder="R$" style="width: 365px; height: 50px; border-radius: 10px;" required>
                 </section>
-    <!-- Formulário consumo próprio              -->
-                <h1 class="fumo">Consumo Próprio</h1>
-              <section class="consumo-proprio">
-                  <h2>Caso fume, insira quantos maços de cigarro você consome por semana</h2>
-                  <form id="formulario" class="formproprio">
-                    <label for="integerInput">Digite seu consumo semanal:</label>
-                    <input type="number" id="integerInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required>
-                  </form>
-                </section>
-          </main>
+
+                    <h1 class="gas">Consumo de Gás Natural</h1>
+                  <section class="gas-natural">
+                    <h2>Insira seu consumo de gás natural (gás de cozinha)</h2>
+                    <div class="formgas">
+                    <label for="gasInput">Digite seu consumo mensal de gás:</label>
+                    <input type="number" id="gasInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required>
+                    </div>
+                  </section>
+
+                    <h1 class="fumo">Consumo Próprio</h1>
+                    <section class="consumo-proprio">
+                    <h2>Caso fume, insira quantos maços de cigarro você consome por semana</h2>
+                    <div class="formproprio">
+                    <label for="smokeInput">Digite seu consumo semanal:</label>
+                    <input type="number" id="smokeInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required>
+                    </div>
+                  </section>
+
+                    <input class="btn btn-primary" type="submit" value="Enviar" style="width: 100px; text-align: center; margin-left: 1300px; z-index: 10; margin-top: 5px;">
+                </form>
+            </section>
+        </main>
+        
          
 </body>
 </html>
