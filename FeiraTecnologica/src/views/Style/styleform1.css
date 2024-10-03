@@ -2,16 +2,17 @@
     margin-bottom: 20px;
     margin-left: -30px;
   }
-  h2 {
+.ce:hover{
+    color: #d1e7dd !important;
+  }
+h2 {
     color: white;
     padding: 20px;
-  }
-
-  label {
+}
+label {
     color: white;
-  }
-
-  body {
+}
+body {
     background-image: url('./../imagens/selvas-plantas.PNG');
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,13 +22,11 @@
     font-weight: 400;
     font-style: normal;
     overflow: hidden;
-  }
-
-  header {
+}
+header {
     background-color: #1e2f28;
-  }
-
-  main {
+}
+main {
     margin-left: 40px;
     display: fixed;
     justify-content: center;
@@ -35,9 +34,8 @@
     height: 80vh;
     color: white;
     margin-top: 20px;
-  }
-
-  .consumo-eletrecidade {
+}
+.consumo-eletrecidade {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
@@ -45,65 +43,57 @@
     width: 400px;
     margin-top: 50px;
     height: 550px;
-  }
-  .escolha-veiculo {
+}
+.escolha-veiculo {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-  }
-
-  button {
+}
+button {
     background-color: #ffffff;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-  }
-
-  button img {
+}
+button img {
     width: 50px;
     height: 50px;
-  }
-
-  button p {
+}
+button p {
     margin-top: 5px;
-  }
-
-  button.ativo {
+}
+button.ativo {
     background-color: #00cc66;
-  }
-
-  form {
+}
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
- 
-  input[type="number"], select {
+} 
+input[type="number"], select {
     padding: 10px;
     border-radius: 5px;
     border: none;
-  }
-
-  button[type="submit"]{
+}
+button[type="submit"]{
     background-color: #00cc66;
     padding: 10px;
     border-radius: 5px;
     color: white;
-  }
-
-  .navbar {
-background-color: black;
-font-size: 20px;
+}
+.navbar {
+    background-color: black;
+    font-size: 20px;
 }
 .navbar-brand,
 .nav-link {
-color: white !important;
-margin-left: 20px;
+    color: white !important;
+    margin-left: 20px;
 }
 .nav-link:hover {
-color: #d1e7dd !important;
+    color: #d1e7dd !important;
 }
 .Vd {
     color: green;
@@ -112,6 +102,9 @@ color: #d1e7dd !important;
     margin-bottom: 20px;
     margin-left: 500px;
     margin-top: -647px;
+}
+.gas:hover{
+    color: #d1e7dd !important;
 }
 .gas-natural{
     background-color: rgba(0, 0, 0, 0.5);
@@ -128,6 +121,9 @@ color: #d1e7dd !important;
     margin-left: 1050px;
     margin-top: -643px;
 }
+.fumo:hover{
+    color: #d1e7dd !important;
+}
 .consumo-proprio{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -137,4 +133,10 @@ color: #d1e7dd !important;
     margin-top: 40px;
     height: 550px;
     margin-left: 1000px;
+}
+.formproprio{
+    margin-top: -20px;
+}
+.formgas{
+    margin-top: 10px;
 }
