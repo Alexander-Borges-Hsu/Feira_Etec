@@ -12,10 +12,14 @@
         $username = $_POST['usuario'];
         $password = $_POST['senha'];
 
-        header("Location: Pages/tela_inicial.html");
+        //header("Location: Pages/tela_inicial.html");
     }    
     
+    $sqlSelect = 'SELECT idUsuario FROM tbnew_usuario WHERE newusuario = "' . $username .'"';
+
     //Efetua a conexão com o banco
     $conn = ConnectionFactory::getConnection();
+    $conn->exec($sqlSelect); 
+
+    //terminar o select
     
-?>
