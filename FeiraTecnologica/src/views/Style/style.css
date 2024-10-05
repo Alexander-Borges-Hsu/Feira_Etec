@@ -243,6 +243,8 @@ color: #ffffff;
 .esqueci:hover{
     color: grey;
 }
-
-
+.error{
+    color:red;
+}
+.success { color: green; }
 

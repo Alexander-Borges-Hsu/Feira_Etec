@@ -1,7 +1,7 @@
 Para a criacão do banco deve-se usar -
 create database bdlogin;
 
-ao entrar no Banco login -
+Ao entrar no Banco login -
 create table tbnew_usuario(
     idUsuario int primary key AUTO_INCREMENT,
     newusuario varchar(50),
@@ -10,3 +10,5 @@ create table tbnew_usuario(
 
     )
 
+Dentro do Banco login, faça o seguinte update -
+ALTER TABLE tbnew_usuario ADD CONSTRAINT unq_nome_usuario UNIQUE (newusuario);

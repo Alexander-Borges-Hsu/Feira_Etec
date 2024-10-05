@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /*O código acima foi feito para permitir que somente valores monetários sejam inseridos no form1, em consumo de energia*/
-
+// O código a baixo valida o formulario caso as senhas forem iguais
 document.addEventListener("DOMContentLoaded", function () {
     // Inputs
     const senha1 = document.getElementsByName('newsenha')[0];
@@ -81,5 +81,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /*O código acima foi feito para somente válidar numeros inteiros na página form1 em gás natural e em maços de cigarro*/
-
-    

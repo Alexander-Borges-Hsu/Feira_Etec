@@ -1,3 +1,6 @@
+<?php
+    include('./src/views/MainCadastro.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -59,7 +62,7 @@
                         </div>
                     </form>       
                     <!-- Formulário do cadastro              -->
-                    <form method="POST" action="./src/views/MainCadastro.php">
+                    <form method="POST" action="index.php">
                         <div class="sign-up-form">
                             <div class="group">
                                 <label for="user" class="label">Usuário</label>
@@ -80,6 +83,7 @@
                             </div>
                             <div class="group">
                                 <input type="submit" class="button" value="Cadastrar" disabled id="botaoenviar">
+                                <p class="success" id="mensagemSucesso"></p>
                             </div>
                             <div class="hr"></div>
                             
