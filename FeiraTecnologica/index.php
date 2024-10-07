@@ -27,7 +27,7 @@
     </div>
     <div class="content">
         <img src="./src/views/imagens/imagem.png" class="img-fluid" id="ic">
-    </div>
+</div>
     <div class="dark-overlay">
         <!-- Formulário do login -->
         <form method="POST" action="./src/views/Main.php">
