@@ -1,5 +1,5 @@
 <?php
-    include('./src/views/MainCadastro.php');
+    include('./src/views/MainCadastro&Login.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -11,11 +11,10 @@
     <title>VerdeCalc</title>
 
     <link rel="stylesheet" href="./src/views/Style/style.css">
-    <script src="./src/views/Script/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <script src="./src/views/Script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
     
 </head>
 <body class="index"> 
@@ -30,7 +29,7 @@
 </div>
     <div class="dark-overlay">
         <!-- Formulário do login -->
-        <form method="POST" action="./src/views/Main.php">
+        <form method="POST" action="index.php">
             <main class="login-form">
                 <div class="col-md-6 mx-auto p-0">
                     <div class="card">
