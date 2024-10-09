@@ -39,10 +39,10 @@
                 echo('<script>alert("Cadastro realizado com sucesso!")</script>');
             }
         } else if (isset($_POST['usuario'])) {
-
+            
             $username = $_POST['usuario'];
             $password = $_POST['senha'];
-    
+            
             // Consultar o banco de dados para verificar o usuário
             $stmt = $conn->prepare("SELECT * FROM tbnew_usuario WHERE newusuario = :nome_usuario");
             $stmt->bindParam(':nome_usuario', $username);
@@ -52,8 +52,10 @@
             if ($stmt->rowCount() > 0) {
                 $user = $stmt->fetch(PDO::FETCH_ASSOC);
                 // Verificar a senha
+                
                 if (password_verify($password, $user['newsenha'])) {
-                    // Login bem-sucedido
+                    // Login bem-sucedido 
+                    
                     header("Location: ./src/views/Pages/tela_inicial.html");
                      // Para garantir que o script pare após o redirecionamento
                      exit;
@@ -71,6 +73,7 @@
         }
 
     }
+    //Até o verify está dando certo
    
 
     

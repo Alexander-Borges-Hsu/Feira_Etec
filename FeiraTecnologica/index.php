@@ -18,9 +18,6 @@
     
 </head>
 <body class="index"> 
-    <div class="top">
-        <p>.</p>
-    </div>
     <div class="sp">
         <span class="Vd"><p>Verde</span><span class="Ca">Calc</P></span>
     </div>
