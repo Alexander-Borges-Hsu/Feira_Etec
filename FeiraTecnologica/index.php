@@ -47,7 +47,7 @@
                                 <label for="pass" class="label">Senha</label>
                                 <input id="pass" type="password" class="input" data-type="password" placeholder="Senha" required name="senha">
                             </div>
-                                <p id="loginError" style="color: red; display: none;"> </p>
+                                <p id="loginError" style="color: red; display: none;">Usuario ou senha errado! </p>
                             <div class="group">
                                 <input id="check" type="checkbox" class="check" checked>
                                 <label for="check"><span class="icon"></span><span class="lembre">Lembre de mim</span></label>

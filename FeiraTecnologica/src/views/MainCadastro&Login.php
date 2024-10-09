@@ -38,7 +38,7 @@
     
                 echo('<script>alert("Cadastro realizado com sucesso!")</script>');
             }
-        } elseif (isset($_POST['usuario'])) {
+        } else if (isset($_POST['usuario'])) {
 
             $username = $_POST['usuario'];
             $password = $_POST['senha'];
@@ -55,28 +55,23 @@
                 if (password_verify($password, $user['newsenha'])) {
                     // Login bem-sucedido
                     header("Location: ./src/views/Pages/tela_inicial.html");
-                    exit; // Para garantir que o script pare após o redirecionamento
+                     // Para garantir que o script pare após o redirecionamento
+                     exit;
                 } else {
-                    $loginError = "Usuário ou senha incorretos.";
+                    echo '<script>
+                             alert("Usuario ou senha errados!");
+                         </script>';
                 }
             } else {
-                $loginError = "Usuário ou senha incorretos.";
+                echo '<script>
+                        alert("Usuario ou senha errados!");
+                    </script>';
             }
 
         }
 
     }
    
-// function verificarVal() {
-//         if (senha1.value === senha2.value && senha1.value !== "") {
-//             botaoEnviar.disabled = false; // Habilita o botão se as senhas forem iguais e não vazias
-//             senha2.style.border = ""; // Remove a borda vermelha
-//             errorMessage.style.display = "none"; // Esconde a mensagem de erro
-//         } else {
-//             botaoEnviar.disabled = true; // Desabilita o botão se forem diferentes ou vazias
-//             senha2.style.border = "2px solid red"; // Adiciona borda vermelha
-//             errorMessage.style.display = "block"; // Mostra a mensagem de erro
-//         }
-//     }
+
     
     
