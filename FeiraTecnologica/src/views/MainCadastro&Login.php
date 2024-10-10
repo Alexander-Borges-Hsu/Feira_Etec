@@ -52,13 +52,16 @@
             if ($stmt->rowCount() > 0) {
                 $user = $stmt->fetch(PDO::FETCH_ASSOC);
                 // Verificar a senha
+
+                $bdPass = $user['newsenha'];
+
                 
-                if (password_verify($password, $user['newsenha'])) {
+                if (password_verify($password, $bdPass)) {
                     // Login bem-sucedido 
                     
                     header("Location: ./src/views/Pages/tela_inicial.html");
-                     // Para garantir que o script pare após o redirecionamento
-                     exit;
+                     
+                    
                 } else {
                     echo '<script>
                              alert("Usuario ou senha errados!");
@@ -73,7 +76,7 @@
         }
 
     }
-    //Até o verify está dando certo
+    //Até o verify dar certo
    
 
     
