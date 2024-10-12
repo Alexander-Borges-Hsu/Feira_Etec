@@ -2,7 +2,6 @@
 
     include('./vendor/autoload.php');
 
-    use APP\models\Usuario;
     use APP\persistence\ConnectionFactory;
 
     $NewUsername = '';
@@ -18,7 +17,7 @@
         if (isset($_POST['newusuario'])) {
             // Processa o cadastro
             $NewUsername = $_POST['newusuario'];
-            $NewPassword = $_POST['newsenha'];
+            $NewPassword = trim($_POST['newsenha']);
             $NewEmail = $_POST['newemail'];
     
             $stmt = $conn->prepare("SELECT * FROM tbnew_usuario WHERE newusuario = :nome_usuario");
@@ -41,7 +40,7 @@
         } else if (isset($_POST['usuario'])) {
             
             $username = $_POST['usuario'];
-            $password = $_POST['senha'];
+            $password = trim($_POST['senha']);
             
             // Consultar o banco de dados para verificar o usuário
             $stmt = $conn->prepare("SELECT * FROM tbnew_usuario WHERE newusuario = :nome_usuario");
@@ -59,7 +58,7 @@
                 if (password_verify($password, $bdPass)) {
                     // Login bem-sucedido 
                     
-                    header("Location: ./src/views/Pages/tela_inicial.html");
+                    header("Location: ./src/views/Pages/tela_inicial.php");
                      
                     
                 } else {

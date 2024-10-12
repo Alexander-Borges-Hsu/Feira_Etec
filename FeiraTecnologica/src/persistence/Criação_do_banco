@@ -5,10 +5,7 @@ Ao entrar no Banco login -
 create table tbnew_usuario(
     idUsuario int primary key AUTO_INCREMENT,
     newusuario varchar(50),
-    newsenha varchar(30),
-    newemail varchar(50)
-
-    )
-
-Dentro do Banco login, faça o seguinte update -
-ALTER TABLE tbnew_usuario ADD CONSTRAINT unq_nome_usuario UNIQUE (newusuario);
+    newsenha varchar(255),
+    newemail varchar(50),
+    UNIQUE (newusuario)
+    );
