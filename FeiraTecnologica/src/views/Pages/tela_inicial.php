@@ -23,7 +23,7 @@
     <p>Uma Calculadora de CO2 é uma ferramenta que estima as emissões de dióxido de carbono geradas por atividades como transporte e consumo de energia. Ao inserir dados sobre hábitos diários, os usuarios podem entender seu impacto ambiental, e buscar mais praticas sustentaveis, ajudando a reduzir as emissões de gases de efeito estufa.
     </p>
 
-    <a href="./form1.php" class="btn">Comece Agora</a>
+    <a href="../../../index.php?r=form1.php" class="btn">Comece Agora</a>
 
   </section>
     

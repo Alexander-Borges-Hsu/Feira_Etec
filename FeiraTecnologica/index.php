@@ -1,5 +1,6 @@
 <?php
-    include('./src/views/MainCadastro&Login.php');
+    include('./src/controller/APP_controller.php');
+    //Usar o MainCadastro caso o controller não funcione
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -26,7 +27,7 @@
     </div>
     <div class="dark-overlay">
         <!-- Formulário do login -->
-        <form method="POST" action="index.php">
+        <form method="POST" action="index.php?r=logUser&m=tela_inicial"><!--O método de mudança é index-->
             <main class="login-form">
                 <div class="col-md-6 mx-auto p-0">
                     <div class="card">
@@ -59,7 +60,7 @@
                         </div>
                     </form>       
                     <!-- Formulário do cadastro              -->
-                    <form method="POST" action="index.php">
+                    <form method="POST" action="index.php?r=cadUser">
                         <div class="sign-up-form">
                             <div class="group">
                                 <label for="user" class="label">Usuário</label>
