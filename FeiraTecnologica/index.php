@@ -27,7 +27,7 @@
     </div>
     <div class="dark-overlay">
         <!-- Formulário do login -->
-        <form method="POST" action="index.php?r=logUser&m=tela_inicial"><!--O método de mudança é index-->
+        <form method="POST" action="index.php?r=logUser&m=tela_inicial">
             <main class="login-form">
                 <div class="col-md-6 mx-auto p-0">
                     <div class="card">
