@@ -1,0 +1,96 @@
+ /* Textos */
+
+ .titulo {
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+
+h2 {
+  color: white;
+}
+
+/* Corpos semanticos */
+
+
+body {
+  background-image: url('./../imagens/selvas-plantas.PNG');
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+  height: 100vh;
+}
+
+/* Elementos Especificos */
+
+label {
+  color: white;
+}
+
+.transporte-individual {
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  margin-top: 50px;
+  color: white;
+}
+
+.escolha-veiculo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+button p {
+  margin-top: 5px;
+}
+
+button.ativo {
+  background-color: #1c7847;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="number"], select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button[type="submit"]{
+  background-color: #037d66;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}

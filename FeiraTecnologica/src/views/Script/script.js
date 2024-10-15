@@ -37,44 +37,149 @@ document.addEventListener("DOMContentLoaded", function () {
     senha1.addEventListener('input', verificarVal);
     senha2.addEventListener('input', verificarVal);
 });
-    //Codigo do Form 2 para mudança de cor dos botões  -Davi
+
+
+//---------------------------
+//Codigo do Davi, Form 2 e Form 3 (Botões, Mudança de Cor);
+//---------------------------
    
-    const carroBtn = document.getElementById('carro-btn');
-
-    const motoBtn = document.getElementById('moto-btn')
-
-
-    let transporteSelecionado ="";
-
-    carroBtn.addEventListener('click', function(){
-        transporteSelecionado= 'Carro';
-        carroBtn.classList.add('ativo');
-        motoBtn.classList.remove('ativo');
+// Função para lidar com os transportes individuais (Carro, Moto, Ambos)
     
+function configurarTransportesIndividuais() {
+// Seleciona os botões carro, moto e ambos
+    const carroBtn = document.getElementById('carro-btn');
+    const motoBtn = document.getElementById('moto-btn');
+    const ambosBtn = document.getElementById('ambos-btn');
 
-    motoBtn.addEventListener('click', function(){
-        transporteSelecionado = 'Moto'
-        motoBtn.classList.add('ativo')
-        carroBtn.classList.remove('ativo')
-    })
-   })
+/*Verifica se os botões existem na pagina
+Pensei em colocar caso fosse carregado em outra pagina*/
 
-    document.getElementById('formulario').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-
-    const kms = document.getElementById('kms').value;
-    const dias = document.getElementById('dias').value
-    const combustivel = document.getElementById('combustivel').checked;
-
-    if (kms && dias) {
-        alert('Você rodou', kms, 'kms em', dias, 'dias. Combustivel: ', combustivel,' .')
-    }   else {
-        alert('Preencha todos os campos. ')
+    if (!carroBtn || !motoBtn || !ambosBtn) {
+        return;
+// O return interrompe a função se não houver os botões
     }
-    })
 
-      /* O Código acima foi feito pelo Davi*/
+//Variavel que vai armazenar o tipo de veiculo   
+    let veiculoSelecionado = "";
+
+//Função para mudar as cores e a logica dos botões
+    function atualizarSelecao(veiculo) {
+        carroBtn.classList.remove('ativo');
+        motoBtn.classList.remove('ativo');
+        ambosBtn.classList.remove('ativo');
+
+//Coloca a classe "ativo" quando clicar no botão
+        if (veiculo === 'Carro') {
+            veiculoSelecionado = 'Carro';
+            carroBtn.classList.add('ativo');
+        } else if (veiculo === 'Moto') {
+            veiculoSelecionado = 'Moto';
+            motoBtn.classList.add('ativo');
+        } else if (veiculo === 'Ambos') {
+            veiculoSelecionado = 'Ambos';
+            ambosBtn.classList.add('ativo');
+        }
+    }
+
+    // Eventos de clique para cada botão
+    carroBtn.addEventListener('click', function () {
+        atualizarSelecao('Carro');
+    });
+
+    motoBtn.addEventListener('click', function () {
+        atualizarSelecao('Moto');
+    });
+
+    ambosBtn.addEventListener('click', function () {
+        atualizarSelecao('Ambos');
+    });
+
+    // Prevenir envio de formulário sem preenchimento
+    document.getElementById('formulario').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const kms = document.getElementById('kms').value;
+
+        if (kms) {
+            alert(`Você selecionou: ${veiculoSelecionado}. Kms rodados por dia: ${kms}.`);
+        } else {
+            alert('Preencha todos os campos.');
+        }
+    });
+}
+
+// Função para lidar com os transportes públicos (Ônibus, Ambos, Transportes Ferroviários)
+
+function configurarTransportesPublicos() {
+    const onibusBtn = document.getElementById('onibus-btn');
+    const transFerroBtn = document.getElementById('transFerro-btn');
+    const metroBtn = document.getElementById('metro-btn');
+
+    if (!onibusBtn || !transFerroBtn || !metroBtn) {
+        // Se não houver os botões da segunda página, sai da função
+        return;
+    }
+
+    let transporteSelecionado = "";
+
+    function atualizarSelecao(veiculoSelecionado) {
+        onibusBtn.classList.remove('ativo');
+        transFerroBtn.classList.remove('ativo');
+        metroBtn.classList.remove('ativo');
+
+        if (veiculoSelecionado === 'Ônibus') {
+            transporteSelecionado = 'Ônibus';
+            onibusBtn.classList.add('ativo');
+        } else if (veiculoSelecionado === 'Ambos') {
+            transporteSelecionado = 'Ambos';
+            transFerroBtn.classList.add('ativo');
+        } else if (veiculoSelecionado === 'Transportes Ferroviários') {
+            transporteSelecionado = 'Transportes Ferroviários';
+            metroBtn.classList.add('ativo');
+        }
+    }
+
+    // Eventos de clique para cada botão
+    onibusBtn.addEventListener('click', function () {
+        atualizarSelecao('Ônibus');
+    });
+
+    transFerroBtn.addEventListener('click', function () {
+        atualizarSelecao('Ambos');
+    });
+
+    metroBtn.addEventListener('click', function () {
+        atualizarSelecao('Transportes Ferroviários');
+    });
+
+    // Prevenir envio de formulário sem preenchimento
+    document.getElementById('formulario').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const kms = document.getElementById('kms').value;
+
+        if (kms) {
+            alert(`Você selecionou: ${transporteSelecionado}. Kms rodados por dia: ${kms}.`);
+        } else {
+            alert('Preencha todos os campos.');
+        }
+    });
+}
+
+// Chama a função, dependendo de qual for a pagina ser preenchida
+document.addEventListener('DOMContentLoaded', function () {
+    configurarTransportesIndividuais();
+//Chama a função dos transportes individuais
+    configurarTransportesPublicos();
+//Chama a função dos transportes publicos
+});
+
+ //--------------------------
+ /* O Código acima foi feito pelo Davi*/
+ //--------------------------
+
+
+
+
+
 
       document.getElementById("integerInput").addEventListener("input", function() {
         this.value = this.value.replace(/[^0-9]/g, ''); // Remove qualquer caractere não numérico
