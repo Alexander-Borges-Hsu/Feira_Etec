@@ -71,6 +71,13 @@ footer .boxs:nth-child(4){
 .sociais .social:hover a{
     color: #fff;
 }
+.quem{
+    color: #ddd;
+    text-decoration: none;
+}
+.quem:hover{
+    color: #fff;
+}
 
 
 

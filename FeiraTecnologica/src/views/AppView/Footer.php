@@ -24,7 +24,7 @@
     </div>
     <div class="boxs">
        <h2>Sobre nós</h2>
-       <p>abcdefghijkdhjiosahfdiosvhidefohvodfshvjdklfhvjkdfhvjkdhjvkdfhvjfhjvlshjfjl</p>
+       <a href="#" class="quem">Quem Somos</a>
     </div>
 </footer>
 
