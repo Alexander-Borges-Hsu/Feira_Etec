@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color: white;
+}
+footer{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+}
+.boxs{
+    
+}

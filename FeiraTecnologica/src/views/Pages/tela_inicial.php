@@ -27,6 +27,8 @@
 
   </section>
     
-    
+    <?php
+    include('../AppView/Footer.php');
+    ?>
   </body>
 </html>
