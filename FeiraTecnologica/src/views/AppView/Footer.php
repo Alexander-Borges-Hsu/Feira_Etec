@@ -1,5 +1,6 @@
 <footer>
     <link rel="stylesheet" href="../Style/stylefooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <div class="boxs">
        <h2>Início</h2>
        <ul>
@@ -26,3 +27,18 @@
        <p>abcdefghijkdhjiosahfdiosvhidefohvodfshvjdklfhvjkdfhvjkdhjvkdfhvjfhjvlshjfjl</p>
     </div>
 </footer>
+
+<div class="footer">
+    <h2>Logo</h2>
+    <div class="sociais">
+      <div class="social">
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </div>
+    </div>
+</div>
