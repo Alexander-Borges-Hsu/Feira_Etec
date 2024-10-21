@@ -4,7 +4,7 @@
     <div class="boxs">
        <h2>Início</h2>
        <ul>
-           <li><a href="#">Home</a></li>
+           <li><a href="./">Home</a></li>
            <li><a href="#">Calculadora CO2</a></li>
            <li><a href="#">Quem Somos</a></li>
        </ul>
@@ -29,7 +29,7 @@
 </footer>
 
 <div class="footer">
-    <h2>Logo</h2>
+    <h2><span>Verde</span><span class="Vd">Calc</span></h2>
     <div class="sociais">
       <div class="social">
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
