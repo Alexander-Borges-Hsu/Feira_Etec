@@ -6,6 +6,8 @@
     <title>VerdeCalc - Consumo de CO₂ Sustentável</title>
     <link rel="icon" href=".\..\imagens\imagem.png">
 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./../Style/styleTelaInicial.css">
 
@@ -14,10 +16,10 @@
     <link rel="stylesheet" href="./../Style/styleResultados.css">
 </head>
 <body class="tela1">
-    <?php 
-    include('../AppView/NavBar.php');
-  ?>
-  
+   <!-- Barra de Navegação                  -->
+  <?php 
+  include('../AppView/NavBar.php');
+?>
     <div class="container">
         <h1>Parabéns! Seu consumo de CO₂ está em níveis sustentáveis!</h1>
         <p>Seu consumo de gás carbônico está em um nível exemplar, muito abaixo da média global. Isso significa que suas ações estão contribuindo diretamente para a preservação do meio ambiente e a mitigação das mudanças climáticas.</p>

@@ -33,7 +33,8 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Kurale", serif;
-  overflow-y: hidden; /* Remove o scroll apenas vertical */
+  overflow-y: auto;
+  overflow: hidden;
 }
 
 .navbar {
@@ -138,12 +139,26 @@ button[type="submit"] {
     align-items: center;
   }
 
+  body {
+      overflow: auto;
+  }
+
   button {
-    width: 100%;
+    width: 90%;
     max-width: 300px;
+    margin: 10px 0;
+  }
+
+  button p {
+    font-size: 1rem; /* Ajusta o tamanho do texto dos botões */
   }
 
   .transporte-individual {
-    width: 90%;
+    width: 95%;
+  }
+
+  input[type="number"], select, button[type="submit"] {
+    font-size: 1rem; /* Tamanhos de fontes ajustados para melhor legibilidade */
+    padding: 12px; /* Aumenta o espaçamento interno dos campos e botões */
   }
 }

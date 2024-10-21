@@ -14,13 +14,11 @@
 
 </head>
 <body>
-
+  <!-- Barra de Navegação                  -->
   <?php 
-  include('../AppView/NavBar.php');
-?>
-
+    include('../AppView/NavBar.php');
+  ?>
   <main>
-
     <h1 class="titulo">Transportes Individuias</h1>
 
     <section class="transporte-individual">
@@ -49,7 +47,7 @@
 
       <!--O form abaixo diz sobre os espaços para preencher abaixo dos botoes carro e moto-->
 
-      <!--Campo onde informa, qual tipo de combustivel será usado trazendo tres opções Gasolina, Gás Natural,Diesel-->
+      <!--Campo onde informa, qual tipo de combustivel será usado trazendo tres opções Gasolina, Gás Natural, Diesel-->
 
       <form id="formulario" class="informacoes-complementares">
         <label for="combustivel">Combustível utilizado:</label>

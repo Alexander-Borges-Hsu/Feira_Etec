@@ -1,7 +1,7 @@
 /* Estilos globais para todas as telas */
 body {
-    font-family: "Kurale", serif;
-    background-image: url('./../imagens/selvas-plantas.png'); /* Caminho da imagem de fundo */
+    font-family: "Comfortaa", serif;
+    background-image: url('./../imagens/selvas-plantas.png');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -9,7 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow-y: hidden; /* Remove o scroll apenas vertical */
+    overflow: hidden;
+    margin-top: 40px;
 }
 
 .navbar {
@@ -31,7 +32,7 @@ body {
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.7); /* Preto com 70% de opacidade */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com 70% de opacidade */
     border-radius: 15px;
     padding: 40px;
     width: 90%;
@@ -39,6 +40,8 @@ body {
     color: white;
     text-align: center;
     position: relative;
+    /* Transição suave ao aparecer */
+    animation: fadeIn 1s ease-in-out;
 }
 
 .main-title {
@@ -57,10 +60,28 @@ body {
     margin-bottom: 20px;
 }
 
+/* Animação na imagem (Elemento 4) */
 .image-section img {
     width: 300px;
     height: auto;
     border-radius: 15px;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.image-section img:hover {
+    transform: scale(1.05); /* Aumentar a imagem ao passar o mouse */
+}
+
+/* Adicionando uma leve animação de fade-in na entrada do container */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Leve deslizamento ao aparecer */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Estilos específicos para cada tela */
@@ -106,6 +127,7 @@ body {
 
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
+
     .container {
         padding: 30px;
     }
@@ -131,6 +153,7 @@ body {
     body {
         height: auto;
         padding: 20px;
+        overflow: auto;
     }
 
     .container {

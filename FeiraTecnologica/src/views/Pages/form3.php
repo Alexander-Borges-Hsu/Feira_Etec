@@ -20,7 +20,6 @@
   <?php 
   include('../AppView/NavBar.php');
 ?>
-
   <main>
 
     <h1 class="titulo">Transportes Individuias</h1>
