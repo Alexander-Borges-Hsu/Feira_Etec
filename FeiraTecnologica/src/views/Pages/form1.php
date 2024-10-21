@@ -25,9 +25,9 @@
     <section class="formulario">
       <section class="consumo-eletrecidade">
         <h2>Insira seu consumo mensal de eletricidade em Reais</h2>
-        <form id="formulario" class="informacoes-complementares">
+        <form id="formulario" class="informacoes-complementares" action = "../../../index.php">
           <label for="moneyInput">Digite seu consumo mensal de energia:</label>
-          <input type="text" id="moneyInput" placeholder="R$" style="width: 365px; height: 50px; border-radius: 10px;" required>
+          <input type="text" id="moneyInput" placeholder="R$" style="width: 365px; height: 50px; border-radius: 10px;" required name="eletricidade">
       </section>
 
       <h1 class="gas">Consumo de Gás Natural</h1>
@@ -35,7 +35,7 @@
         <h2>Quantos butijões de gás de cozinha você utiliza por mês?</h2>
         <div class="formgas">
           <label for="gasInput">Digite seu consumo mensal de gás:</label>
-          <input type="number" id="gasInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required>
+          <input type="number" id="gasInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required name="butijoes">
         </div>
       </section>
 
@@ -44,7 +44,7 @@
         <h2>Caso fume, insira quantos maços de cigarro você consome por semana</h2>
         <div class="formproprio">
           <label for="smokeInput">Digite seu consumo semanal:</label>
-          <input type="number" id="smokeInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required>
+          <input type="number" id="smokeInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required name="cigarro">
         </div>
       </section>
 

@@ -7,35 +7,22 @@ use APP\models\logUser;
 
 $conn = ConnectionFactory::getConnection();
 
-$rota = $_REQUEST['r'] ?? 'home';
-$action = $_REQUEST['m'] ?? 'index';
+$controllerOption = $_REQUEST['r'] ?? 'home';
+$controllerAction = $_REQUEST['m'] ?? 'index';
+$controllerKey = $_REQUEST['k'] ?? '';
 
 //Rota do cadastro e login
-if($rota == 'cadUser'){
+if($controllerKey == "PDO"){
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
-        $NewUsername = $_POST['newusuario'];
-        $NewPassword = trim($_POST['newsenha']);
-        $NewEmail = $_POST['newemail'];
-
-        $a = new cadUser($conn);
-        $a->create($NewUsername, $NewPassword, $NewEmail);
+        $className = "APP\\models\\" . $controllerOption;
+        $a = new $className($conn);        
+        $a->$controllerAction($_POST);
 
     }
-}else if($rota == 'logUser'){
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $username = $_POST['usuario'];
-        $password = trim($_POST['senha']);
-
-        $b = new logUser($conn);
-        $b->verify($username, $password);
-
-}}
+}
 
 //Rota pra troca de página
-if($rota == 'tela_inicial.php'){
-    header('Location: ./src/views/Pages/tela_inicial.php?r=tela_inicial.php');
-}else if($rota == 'form1.php'){
-    header('Location: ./src/views/Pages/form1.php?r=form1.php');
+if($controllerKey == "RDCT"){
+    $controllerRequest = new APP\controller\redirectController;
+    $controllerRequest->redirect($controllerAction);
 }

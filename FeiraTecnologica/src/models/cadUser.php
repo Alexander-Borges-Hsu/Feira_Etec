@@ -9,12 +9,21 @@ class cadUser{
     
     public function __construct(\PDO $conn){
         $this->pdo = $conn;
+        
     }
+
+    
 
     private $AllUsers = [];
 
-    public function create($username, $password, $email){
-        $user = new User($username, $password, $email);
+    public function create($colunas){
+        
+        $this->NewUsername = $_POST['newusuario'];
+        $this->NewPassword = trim($_POST['newsenha']);
+        $this->NewEmail = $_POST['newemail'];
+
+        $user = new User($this->NewUsername, $this->NewPassword, $this->NewEmail);
+
         $recebeUser = $user->getUsername();
         $recebeSenha = $user->getPassword();
         $recebeEmail = $user->getEmail();

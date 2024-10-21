@@ -9,9 +9,12 @@ class logUser{
         $this->pdo = $conn;
     }
 
-    public function verify($username, $password){
+    public function verify($coluneas){
+        $this->username = $_POST['usuario'];
+        $this->password = trim($_POST['senha']);
+
         $stmt = $this->pdo->prepare("SELECT * FROM tbnew_usuario WHERE newusuario = :nome_usuario");
-        $stmt->bindParam(':nome_usuario', $username);
+        $stmt->bindParam(':nome_usuario', $this->username);
         $stmt->execute();
 
         // Verificar se o usuário existe
@@ -21,7 +24,7 @@ class logUser{
             // Verificar a senha
             $bdPass = $user['newsenha'];
             
-            if (password_verify($password, $bdPass)) {
+            if (password_verify($this->password, $bdPass)) {
                 // Login bem-sucedido                 
                 header("Location: ./src/views/Pages/tela_inicial.php");
                  

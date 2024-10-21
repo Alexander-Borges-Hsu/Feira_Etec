@@ -63,7 +63,7 @@
 
                         <!-- Conteúdo do formulário de Login -->
                         <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
-                            <form method="POST" action="index.php?r=logUser&m=tela_inicial">
+                            <form method="POST" action="index.php?r=logUser&m=verify&k=PDO">
                                 <!-- Campo de usuário -->
                                 <div class="mb-3">
                                     <label for="user" class="form-label">Usuário</label>
@@ -94,7 +94,7 @@
 
                         <!-- Conteúdo do formulário de Cadastro -->
                         <div class="tab-pane fade" id="pills-cadastro" role="tabpanel" aria-labelledby="pills-cadastro-tab">
-                            <form method="POST" action="index.php?r=cadUser">
+                            <form method="POST" action="index.php?r=cadUser&m=create&k=PDO">
                                 <!-- Campo para criação de usuário -->
                                 <div class="mb-3">
                                     <label for="newuser" class="form-label">Usuário</label>
