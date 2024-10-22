@@ -95,16 +95,7 @@ Pensei em colocar caso fosse carregado em outra pagina*/
     });
 
     // Prevenir envio de formulário sem preenchimento
-    document.getElementById('formulario').addEventListener('submit', function (event) {
-        event.preventDefault();
-        const kms = document.getElementById('kms').value;
-
-        if (kms) {
-            alert(`Você selecionou: ${veiculoSelecionado}. Kms rodados por dia: ${kms}.`);
-        } else {
-            alert('Preencha todos os campos.');
-        }
-    });
+    
 }
 
 // Função para lidar com os transportes públicos (Ônibus, Ambos, Transportes Ferroviários)
@@ -151,17 +142,7 @@ function configurarTransportesPublicos() {
         atualizarSelecao('Transportes Ferroviários');
     });
 
-    // Prevenir envio de formulário sem preenchimento
-    document.getElementById('formulario').addEventListener('submit', function (event) {
-        event.preventDefault();
-        const kms = document.getElementById('kms').value;
-
-        if (kms) {
-            alert(`Você selecionou: ${transporteSelecionado}. Kms rodados por dia: ${kms}.`);
-        } else {
-            alert('Preencha todos os campos.');
-        }
-    });
+    
 }
 
 // Chama a função, dependendo de qual for a pagina ser preenchida
@@ -186,3 +167,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     /*O código acima foi feito para somente válidar numeros inteiros na página form1 em gás natural e em maços de cigarro*/
+

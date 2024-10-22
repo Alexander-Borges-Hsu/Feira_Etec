@@ -49,9 +49,10 @@
 
       <!--Campo onde informa, qual tipo de combustivel será usado trazendo tres opções Gasolina, Gás Natural, Diesel-->
 
-      <form id="formulario" class="informacoes-complementares">
+      <form id="formulario" class="informacoes-complementares" action="../../../index.php" method="POST">
         <label for="combustivel">Combustível utilizado:</label>
-          <select id="combustivel">
+          <select id="combustivel" name="combustivel" required>
+            <option value="disabled" disabled selected>Escolha seu combustivel</option>
             <option value="gasolina">Gasolina</option>
             <option value="gas_natural">Gás Natural</option>
             <option value="diesel">Diesel</option>
@@ -60,19 +61,53 @@
 
        <!--Campo onde informa, quantos kms o user rodou por dia-->
 
-       <label for="kms">Kms Rodados Por Dia:</label>
-       <input type="number" id="kms">
+       <label for="kms">Kms Rodados Por Dia (Digite 0 caso não utilize):</label>
+       <input type="number" id="kms" name="kmdia" required>
 
       <!--Dar proximo, e ir a proximo formulario-->
        <button type="submit">Próximo</button>
 
        <!--Irá para o proximo formulario sem adicionar nenhuma informação-->
-       <button type="submit">Não Possuo os transportes acima</button>
+       <button type="submit" id="forcarenvio">Não Possuo os transportes acima</button>
       </form>
     </section>
   </main>
+  <!-- Lembrar da logica pra usar no controller -->
+
+
+
+
+
   <script src="./../Script/script.js"></script>
  
-  </script>
+  <script>
+        // Captura o formulário e o botão "Enviar em branco"
+        const formulario = document.getElementById('formulario');
+        const enviarEmBranco = document.getElementById('forcarenvio');
+
+        // Adiciona evento de clique ao botão "Enviar em branco"
+        enviarEmBranco.addEventListener('click', function() {
+            // Remove a validação temporariamente
+            formulario.noValidate = true;
+
+            // Limpa todos os campos do formulário manualmente
+            const inputs = formulario.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.value = null; // Garante que todos os valores estejam vazios
+            });
+            // Limpa o campo select
+            const selects = formulario.querySelectorAll('select');
+            selects.forEach(select => {
+                select.value = ''; // Define o valor do select como vazio
+            });
+           
+
+            // Envia o formulário
+            formulario.submit();
+
+            // Reativa a validação para usos futuros
+            formulario.noValidate = false;
+        });
+    </script>
 </body>
 </html>

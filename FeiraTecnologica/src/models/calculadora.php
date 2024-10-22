@@ -7,6 +7,9 @@ class calculadora{
         $this->eletricidade = $_POST['eletricidade'];
         $this->butijoes = $_POST['butijoes'];
         $this->cigarro = $_POST['cigarro'];
+        $this->combustivel = $_POST['combustivel'];
+        $this->kmdia = $_POST['kmdia'];
+        
 
     }
 

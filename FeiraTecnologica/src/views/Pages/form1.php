@@ -25,7 +25,7 @@
     <section class="formulario">
       <section class="consumo-eletrecidade">
         <h2>Insira seu consumo mensal de eletricidade em Reais</h2>
-        <form id="formulario" class="informacoes-complementares" action = "../../../index.php">
+        <form id="formulario" class="informacoes-complementares" action = "../../../index.php" method="POST">
           <label for="moneyInput">Digite seu consumo mensal de energia:</label>
           <input type="text" id="moneyInput" placeholder="R$" style="width: 365px; height: 50px; border-radius: 10px;" required name="eletricidade">
       </section>
