@@ -50,12 +50,12 @@
 
       <!--O form abaixo diz sobre os espaços para preencher abaixo dos botoes carro e moto-->
 
-      <form id="formulario" class="informacoes-complementares">
+      <form id="formulario" class="informacoes-complementares"  action = "../../../index.php?k=PDO&r=calculadora&m=calcular" method="POST">
 
        <!--Campo onde informa, quantos kms o user rodou por dia-->
 
        <label for="kms">Kms Rodados Por Dia:</label>
-       <input type="number" id="kms">
+       <input type="number" id="kms" name="kmdiapub">
 
       <!--Dar proximo, e ir a proximo formulario-->
        <button type="submit">Próximo</button>
