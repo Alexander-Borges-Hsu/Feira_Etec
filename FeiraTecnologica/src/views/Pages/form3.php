@@ -1,14 +1,3 @@
-<?php
-session_start();
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $_SESSION['form3_data'] = $_POST; // Armazena os dados do terceiro formulário
-    
-    // Redireciona para o script final que processará todos os dados juntos
-    header("Location: ../../models/calculadora.php");
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <!--O form abaixo diz sobre os espaços para preencher abaixo dos botoes carro e moto-->
 
-      <form id="formulario" class="informacoes-complementares"  action = "form3.php" method="POST">
+      <form id="formulario" class="informacoes-complementares"  action = "../../../index.php" method="POST">
+      <input type="text" name="k" value="CCL" style="display: none;">
 
        <!--Campo onde informa, quantos kms o user rodou por dia-->
 
