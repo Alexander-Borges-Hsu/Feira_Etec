@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $_SESSION['form2_data'] = $_POST; // Armazena os dados do primeiro formulário
+    header("Location: form3.php"); // Redireciona para o segundo formulário
+    exit;
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +57,7 @@
 
       <!--Campo onde informa, qual tipo de combustivel será usado trazendo tres opções Gasolina, Gás Natural, Diesel-->
 
-      <form id="formulario" class="informacoes-complementares"  action = "../../../index.php?k=PDO&r=calculadora&m=calcular" method="POST">
+      <form id="formulario" class="informacoes-complementares"  action = "form2.php" method="POST">
         <label for="combustivel">Combustível utilizado:</label>
           <select id="combustivel" name="combustivel" required>
             <option value="disabled" disabled selected>Escolha seu combustivel</option>

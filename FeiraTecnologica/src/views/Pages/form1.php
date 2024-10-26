@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $_SESSION['form1_data'] = $_POST; // Armazena os dados do primeiro formulário
+    header("Location: form2.php"); // Redireciona para o segundo formulário
+    exit;
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,7 +34,8 @@
     <section class="formulario">      
       <section class="consumo-eletrecidade">
         <h2>Insira seu consumo mensal de eletricidade em Reais</h2>
-        <form id="formulario" class="informacoes-complementares" action = "../../../index.php?k=PDO&r=calculadora&m=calcular" method="POST">
+        <form id="formulario" class="informacoes-complementares" action = "form1.php" method="POST">
+          <!-- Jogar pro controller depois dos testes -->
           <label for="moneyInput">Digite seu consumo mensal de energia:</label>
           <input type="text" id="moneyInput" placeholder="R$" style="width: 365px; height: 50px; border-radius: 10px;" required name="eletricidade">
       </section>

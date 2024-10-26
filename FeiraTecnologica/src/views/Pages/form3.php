@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $_SESSION['form3_data'] = $_POST; // Armazena os dados do terceiro formulário
+    
+    // Redireciona para o script final que processará todos os dados juntos
+    header("Location: ../../models/calculadora.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,12 +61,12 @@
 
       <!--O form abaixo diz sobre os espaços para preencher abaixo dos botoes carro e moto-->
 
-      <form id="formulario" class="informacoes-complementares"  action = "../../../index.php?k=PDO&r=calculadora&m=calcular" method="POST">
+      <form id="formulario" class="informacoes-complementares"  action = "form3.php" method="POST">
 
        <!--Campo onde informa, quantos kms o user rodou por dia-->
 
        <label for="kms">Kms Rodados Por Dia:</label>
-       <input type="number" id="kms" name="kmdiapub">
+       <input type="number" id="kms" name="kmdiapub" required>
 
       <!--Dar proximo, e ir a proximo formulario-->
        <button type="submit">Próximo</button>

@@ -1,6 +1,19 @@
 <?php
 namespace APP\models;
+
 session_start();
+
+if (isset($_SESSION['form1_data'], $_SESSION['form2_data'], $_SESSION['form3_data'])) {
+    
+    $todos_dados = array_merge($_SESSION['form1_data'], $_SESSION['form2_data'], $_SESSION['form3_data']);
+
+    
+   
+    
+    session_unset();
+    session_destroy();
+} 
+
 class calculadora{
 
     private $pdo;
@@ -9,30 +22,20 @@ class calculadora{
         $this->pdo = $conn;
         
     }
+
     //Arrumar o codigo pra inserção no banco de dados
     public function calcular($formCompleto){
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
            
-            if (isset($_POST['eletricidade'])) {
-                $eletricidade = $_SESSION['eletricidade'] = $_POST['eletricidade'];
-                $butijoes = $_SESSION['butijoes'] = $_POST['butijoes'];
-                $cigarro = $_SESSION['cigarro'] = $_POST['cigarro'];
-            }
-                    
-            if (isset($_POST['combustivel'])) {
-                $combustivel = $_SESSION['combustivel'] = $_POST['combustivel'];
-                $kmdia = $_SESSION['kmdia'] = $_POST['kmdia'];
-            }
+        $eletricidade = $formCompleto['eletricidade'];
+        $butijoes = $formCompleto['butijoes'];
+        $cigarro = $formCompleto['cigarro'];
 
-            if (isset($_POST['kmdiapub'])) {
-                $kmdiapub = $_SESSION['kmdiapub'] = $_POST['kmdiapub'];
+        $combustivel = $formCompleto['combustivel'];
+        $kmdia = $formCompleto['kmdia'];
 
-            }
-        }
+        $kmdiapub = $formCompleto['kmdiapub'];
 
         echo($eletricidade . " / " . $butijoes . " / " . $cigarro . " / " . $combustivel . " / " . $kmdia . " / " .$kmdiapub);
-        
+    
     }
-   
-
 }

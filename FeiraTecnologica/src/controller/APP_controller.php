@@ -1,9 +1,9 @@
 <?php
 include('./vendor/autoload.php');
 
+
 use APP\persistence\ConnectionFactory;
-use  APP\models\cadUser;
-use APP\models\logUser;
+use APP\models\calculadora;
 
 $conn = ConnectionFactory::getConnection();
 
@@ -19,6 +19,13 @@ if($controllerKey == "PDO"){
         $a->$controllerAction($_POST);
 
     }
+}
+
+//Condição para o cálculo
+if($controllerKey == "CCL"){
+    $a = new calculadora($conn);
+
+    $a->calcular($_POST);
 }
 
 //Rota pra troca de página
