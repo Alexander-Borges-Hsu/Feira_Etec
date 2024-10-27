@@ -52,12 +52,11 @@
       <form id="formulario" class="informacoes-complementares"  action = "../../../index.php"  method="POST">
       <input type="text" name="k" value="CCL" style="display: none;">
         <label for="combustivel">Combustível utilizado:</label>
-          <select id="combustivel" name="combustivel" required>
-            <option value="disabled" disabled selected>Escolha seu combustivel</option>
+          <select id="combustivel" name="combustivel" required placeholder="a">
             <option value="gasolina">Gasolina</option>
             <option value="gas_natural">Gás Natural</option>
             <option value="diesel">Diesel</option>
-            <option value="não-sei">Não sei informar</option>
+            <option value="nao-sei">Não sei informar</option>
          </select>
 
        <!--Campo onde informa, quantos kms o user rodou por dia-->
@@ -68,8 +67,6 @@
       <!--Dar proximo, e ir a proximo formulario-->
        <button type="submit">Próximo</button>
 
-       <!--Irá para o proximo formulario sem adicionar nenhuma informação-->
-       <button type="submit" id="forcarenvio">Não Possuo os transportes acima</button>
       </form>
     </section>
   </main>
@@ -81,34 +78,5 @@
 
   <script src="./../Script/script.js"></script>
  
-  <script>
-        // Captura o formulário e o botão "Enviar em branco"
-        const formulario = document.getElementById('formulario');
-        const enviarEmBranco = document.getElementById('forcarenvio');
-
-        // Adiciona evento de clique ao botão "Enviar em branco"
-        enviarEmBranco.addEventListener('click', function() {
-            // Remove a validação temporariamente
-            formulario.noValidate = true;
-
-            // Limpa todos os campos do formulário manualmente
-            const inputs = formulario.querySelectorAll('input');
-            inputs.forEach(input => {
-                input.value = null; // Garante que todos os valores estejam vazios
-            });
-            // Limpa o campo select
-            const selects = formulario.querySelectorAll('select');
-            selects.forEach(select => {
-                select.value = ''; // Define o valor do select como vazio
-            });
-           
-
-            // Envia o formulário
-            formulario.submit();
-
-            // Reativa a validação para usos futuros
-            formulario.noValidate = false;
-        });
-    </script>
 </body>
 </html>

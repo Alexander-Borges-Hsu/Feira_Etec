@@ -55,7 +55,7 @@
 
        <!--Campo onde informa, quantos kms o user rodou por dia-->
 
-       <label for="kms">Kms Rodados Por Dia:</label>
+       <label for="kms">Kms Rodados Por Dia (Digite 0 caso não utilize):</label>
        <input type="number" id="kms" name="kmdiapub" required>
 
       <!--Dar proximo, e ir a proximo formulario-->
