@@ -1,4 +1,6 @@
 <nav class="navbar navbar-expand-lg">
+  <link rel="stylesheet" href="C:\Users\gusta\Feira_Etec\FeiraTecnologica\src\views\Style\stylenavbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         <div class="container-fluid">
           <a class="navbar-brand" href="../../../index.php?m=tela_inicial&k=RDCT"><span>Verde</span><span class="Vd">Calc</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
