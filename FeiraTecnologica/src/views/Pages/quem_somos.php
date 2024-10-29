@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php 
-    include('../AppView/NavBar.php');
+    include('C:\Users\gusta\Feira_Etec\FeiraTecnologica\src\views\AppView\NavBar.php');
   ?>
 
 <main>
