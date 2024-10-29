@@ -32,7 +32,7 @@
 
 
 <?php
-    include('../AppView/Footer.php');
+    include('C:\Users\gusta\Feira_Etec\FeiraTecnologica\src\views\AppView\Footer.php');
     ?>
 </body>
 </html>
