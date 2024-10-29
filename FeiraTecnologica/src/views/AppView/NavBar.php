@@ -23,6 +23,7 @@
                   <li><a class="dropdown-item" href="../../../index.php?m=tela_inicial&k=RDCT">Início</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="../../../index.php?m=form1&k=RDCT">Calculadora CO2</a></li>
+                  <li><a class="dropdown-item" href="FeiraTecnologica\src\views\Pages\quem_somos.php">Quem Somos</a></li>
                 </ul>
               </li>
             </ul>
