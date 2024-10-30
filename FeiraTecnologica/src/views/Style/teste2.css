@@ -1,0 +1,217 @@
+/* Textos */
+.titulo {
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+}
+
+.navbar {
+  background-color: black;
+  font-size: 20px;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  color: #d1e7dd !important;
+}
+
+.Vd {
+  color: green;
+}
+
+body {
+  background-image: url('./../imagens/selvas-plantas.PNG');
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Kurale", serif;
+  overflow-y: auto; /* Alterado para auto */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+  min-height: 100vh;
+}
+
+label {
+  color: white;
+}
+
+.transporte-individual {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 50px;
+  color: white;
+  animation: slideIn 2s ease-out; /* Aplica a animação ao formulário */
+}
+
+.escolha-veiculo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  flex: 1;
+  min-width: 150px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+button p {
+  margin-top: 5px;
+}
+
+button.ativo {
+  background-color: #1c7847;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input[type="number"], select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #037d66;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+}
+
+/* Estilo do dropdown para fundo preto e letras verdes */
+.dropdown-menu {
+  background-color: black !important;
+  border: none;
+}
+
+.dropdown-item {
+  color: green !important;
+}
+
+.dropdown-item:hover {
+  background-color: darkgreen;
+  color: white !important;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .escolha-veiculo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  .transporte-individual {
+    width: 95%;
+    padding: 15px;
+  }
+
+  input[type="number"], select, button[type="submit"] {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .transporte-individual {
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .escolha-veiculo {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  button {
+    width: 45%;
+    margin: 5px;
+  }
+
+  input[type="number"], select, button[type="submit"] {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsividade para televisores e telas grandes */
+@media (min-width: 1200px) {
+  .transporte-individual {
+    max-width: 1000px;
+  }
+
+  body {
+    overflow-y: scroll;
+  }
+
+  button img {
+    width: 70px;
+    height: 70px;
+  }
+
+  button p {
+    font-size: 1.2rem;
+  }
+
+  /* Animação de deslizamento e fade-in no formulário */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+}

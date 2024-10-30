@@ -1,0 +1,150 @@
+/* CSS Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body, html {
+    height: 100%;
+    font-family: "Kurale", serif;
+    color: white;
+    background-color: black;
+}
+
+body {
+    background-image: url('./../imagens/selvas-plantas.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da tela */
+}
+
+html {
+    height: 100%; /* Garante que o HTML ocupe 100% da altura */
+    overflow-y: auto; /* Permite a rolagem vertical */
+}
+
+
+h1, h2, label {
+    color: #ffffff; /* Garante que os títulos e labels estejam brancos */
+}
+
+
+.container {
+    padding: 20px;
+}
+
+/* Estilo dos blocos de formulário */
+.consumo {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com opacidade */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px; /* Espaçamento entre os blocos */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    animation: slideIn 0.6s ease-out; /* Aplica a animação ao formulário */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 90%; /* Ajuste para ocupar 90% da largura do bloco */
+    max-width: 300px; /* Limita o tamanho máximo */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px auto 15px; /* Espaçamento e centralização */
+    display: block; /* Centralização no bloco */
+    color: black;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00cc66;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Estilo do Navbar */
+.navbar {
+    background-color: black; /* Cor de fundo do navbar */
+}
+
+.navbar-brand, .nav-link, .dropdown-item {
+    color: white !important; /* Todas as letras em branco */
+}
+
+.navbar-brand:hover, .nav-link:hover, .dropdown-item:hover {
+    color: lightgray !important; /* Cor ao passar o mouse */
+}
+
+/* Remove a cor de fundo ao expandir */
+.navbar-toggler {
+    background-color: white; /* Ícone do toggler visível */
+}
+
+/* Ajuste para o ícone de navegação quando o navbar é colapsado em telas menores */
+.navbar-toggler-icon {
+    filter: invert(1); /* Muda o ícone do toggle para branco */
+}
+
+/* Estilo do dropdown para fundo preto e letras verdes */
+.dropdown-menu {
+    background-color: black !important; /* Fundo preto */
+    border: none; /* Remove bordas */
+}
+
+.dropdown-item {
+    color: green !important; /* Letras verdes */
+}
+
+.dropdown-item:hover {
+    background-color: darkgreen; /* Fundo verde escuro ao passar o mouse */
+    color: white !important; /* Letras brancas ao passar o mouse */
+}
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .consumo {
+        padding: 20px;
+        margin: 10px 0;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+}

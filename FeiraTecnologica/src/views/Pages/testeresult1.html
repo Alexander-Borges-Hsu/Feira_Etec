@@ -17,38 +17,9 @@
 </head>
 <body class="tela1">
    <!-- Barra de Navegação                  -->
-   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../../../index.php?m=tela_inicial&k=RDCT"><span>Verde</span><span class="Vd">Calc</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../../../index.php?m=tela_inicial&k=RDCT">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../../index.php?m=form1&k=RDCT">Calculadora CO2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Quem somos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Páginas
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../../../index.php?m=tela_inicial&k=RDCT">Início</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="../../../index.php?m=form1&k=RDCT">Calculadora CO2</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
+   <?php 
+  include('../AppView/NavBar.php');
+?>
     <div class="container">
         <h1>Parabéns! Seu consumo de CO₂ está em níveis sustentáveis!</h1>
         <p>Seu consumo de gás carbônico está em um nível exemplar, muito abaixo da média global. Isso significa que suas ações estão contribuindo diretamente para a preservação do meio ambiente e a mitigação das mudanças climáticas.</p>
