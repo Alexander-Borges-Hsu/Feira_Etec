@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="./../Style/styleResultados.css">
 </head>
 <body class="tela3">
-    <?php 
-    include('../AppView/NavBar.php');
-  ?>
+<?php 
+  include('../AppView/NavBar.php');
+?>
+      
     <div class="container">
         <h1>Alerta! Seu consumo de CO₂ está muito alto.</h1>
         <p>Dicas para Melhoria : <br>

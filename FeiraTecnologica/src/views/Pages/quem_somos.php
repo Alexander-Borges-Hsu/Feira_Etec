@@ -33,10 +33,6 @@
             </div>
         </div>
     </div>
-
-
-
-
     <main>
         <center><img class="apresentando" src="../imagens/imgtopocorreto.jpg" width="90%" height=""></center> <br><br>
         <section class="topo-do-site">

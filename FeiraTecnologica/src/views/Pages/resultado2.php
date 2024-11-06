@@ -18,7 +18,7 @@
 <!-- Barra de Navegação                  -->
 <?php 
 include('../AppView/NavBar.php');
-?>  
+?>
     <div class="container">
         <h1>Atenção! Seu consumo de CO₂ pode ser melhorado.</h1>
         <p>Aqui estão algumas ações que podem reduzir ainda mais seu consumo de CO₂.

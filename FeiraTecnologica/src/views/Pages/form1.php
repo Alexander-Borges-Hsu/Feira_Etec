@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href=".\..\imagens\imagem.png">
     <title>VerdeCalc</title>
-    
+  
     <link rel="stylesheet" href="./../Style/style.css">
-    <link rel="stylesheet" href="./../Style/styleform1.css">
+    <link rel="stylesheet" href="./../Style/teste.css">
+    
 
     <script src="./../Script/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -15,47 +16,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <!-- Barra de Navegação                  -->
   <?php 
-    include('../AppView/NavBar.php');
-  ?>
-  <main>
-  
-  <!-- Formulário consumo eletrecidade              -->
-    <h1 class="ce">Consumo de Eletrecidade</h1>
-    <section class="formulario">      
-      <section class="consumo-eletrecidade">
-        <h2>Insira seu consumo mensal de eletricidade em Reais</h2>
-        <form id="formulario" class="informacoes-complementares" action = "../../../index.php" method="POST">
+  include('../AppView/NavBar.php');
+?>
+  <main class="container">
+    <h1 class="text-center mb-4">Consumo de Energia e Recursos</h1>
+    
+    <div class="row justify-content-center">
+      <section class="col-12 col-md-6 col-lg-4 consumo">
+        <h2>Consumo de Eletricidade</h2>
+        <form action="../../../index.php" method="POST">
         <input type="text" name="k" value="CCL" style="display: none;">
-          <!-- Jogar pro controller depois dos testes -->
           <label for="moneyInput">Digite seu consumo mensal de energia:</label>
-          <input type="text" id="moneyInput" placeholder="R$" style="width: 365px; height: 50px; border-radius: 10px;" required name="eletricidade">
+          <input type="text" id="moneyInput" placeholder="R$" required name="eletricidade">
       </section>
-
-      <h1 class="gas">Consumo de Gás Natural</h1>
-      <section class="gas-natural">
-        <h2>Quantos butijões de gás de cozinha você utiliza por mês?</h2>
-        <div class="formgas">
-          <label for="gasInput">Digite seu consumo mensal de gás:</label>
-          <input type="number" id="gasInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required name="butijoes">
-        </div>
+      
+      <section class="col-12 col-md-6 col-lg-4 consumo">
+        <h2>Consumo de Gás Natural</h2>
+        <label for="gasInput">Quantos botijões de gás você utiliza por mês?</label>
+        <input type="number" id="gasInput" placeholder="Digite um número" min="0" step="1" required name="butijoes">
       </section>
-
-      <h1 class="fumo">Consumo Próprio</h1>
-      <section class="consumo-proprio">
-        <h2>Caso fume, insira quantos maços de cigarro você consome por semana</h2>
-        <div class="formproprio">
-          <label for="smokeInput">Digite seu consumo semanal:</label>
-          <input type="number" id="smokeInput" placeholder="Digite um número" min="0" step="1" style="width: 365px; height: 50px; border-radius: 10px;" required name="cigarro">
-        </div>
+      
+      <section class="col-12 col-md-6 col-lg-4 consumo">
+        <h2>Consumo Próprio</h2>
+        <label for="smokeInput">Quantos maços de cigarro você consome por semana?</label>
+        <input type="number" id="smokeInput" placeholder="Digite um número" min="0" step="1" required name="cigarro">
       </section>
-
-      <input class="btn btn-primary" type="submit" value="Enviar" style="width: 100px; text-align: center; margin-left: 1300px; z-index: 10; margin-top: 5px;">
-      </form>
-    </section>
+    </div>
+    
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>
   </main>
-        
-         
 </body>
 </html>
