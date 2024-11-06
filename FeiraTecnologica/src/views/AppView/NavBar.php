@@ -13,7 +13,7 @@
                 <a class="nav-link" href="../../../index.php?m=form1&k=RDCT">Calculadora CO2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="FeiraTecnologica/src/views/Pages/quem_somos.php">Quem somos</a>
+                <a class="nav-link" href="../../../index.php?m=quem_somos&k=RDCT">Quem somos</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -23,7 +23,7 @@
                   <li><a class="dropdown-item" href="../../../index.php?m=tela_inicial&k=RDCT">Início</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="../../../index.php?m=form1&k=RDCT">Calculadora CO2</a></li>
-                  <li><a class="dropdown-item" href="FeiraTecnologica/src/views/Pages/quem_somos.php">Quem Somos</a></li>
+                  <li><a class="dropdown-item" href="../../../index.php?m=quem_somos&k=RDCT">Quem Somos</a></li>
                 </ul>
               </li>
             </ul>
