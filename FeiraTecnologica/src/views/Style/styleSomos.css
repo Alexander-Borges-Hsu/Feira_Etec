@@ -1,7 +1,211 @@
-.nav-link {
-    color: white !important;
-    margin-left: 20px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.decora-nav{
+    background-color: rgb(0, 0, 0); 
+    box-shadow: 5px 5px 19px rgba(22, 117, 61, 0.6);
+    border-radius: 5px;
+    padding: 0px; 
+      
 }
-.nav-link:hover {
-    color: #d1e7dd !important;
+
+
+p{
+   
+    margin: -12px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajuste a margem para posicionar o loader no topo */
+  }
+  
+  /* Estilos do loader */
+  .loader {
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    box-sizing: content-box;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+
+
+  .words {
+    overflow: hidden;
+    position: relative;
+    height: 1em;
+    margin-left: 10px;
+  }
+  
+  .words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      var(--bg-color) 10%,
+      transparent 30%,
+      transparent 70%,
+      var(--bg-color) 90%
+    );
+    z-index: 20;
+  }
+  
+  .word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #00FF08;
+    animation: spin_4991 6s infinite;
+  }
+  
+  @keyframes spin_4991 {
+    10% {
+      transform: translateY(-102%);
+    }
+    25% {
+      transform: translateY(-100%);
+    }
+    35% {
+      transform: translateY(-202%);
+    }
+    50% {
+      transform: translateY(-200%);
+    }
+    60% {
+      transform: translateY(-302%);
+    }
+    75% {
+      transform: translateY(-300%);
+    }
+    85% {
+      transform: translateY(-402%);
+    }
+    100% {
+      transform: translateY(-400%);
+    }
+  }
+ 
+  
+/*Estilo do fundo */
+body{
+    background-image: url(../imagens/selvas-plantas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+/* Imagem de aprsentação "sobre a verdecalc" */
+.apresentando{
+    box-shadow: 5px 5px 19px rgba(22, 117, 61, 3.5);
+    border-radius: 20px;
+    padding: 0px;
+}
+
+.flex{
+    display: flex;
+}
+
+h1 {
+    color: white; /* Cor do texto */
+    text-shadow: 
+      1.5px 1.5px 0 black,
+     -1.5px 1.5px 0 black,
+      1.5px -1.5px 0 black,
+     -1.5px -1.5px 0 black,
+      1.5px 0 0 black,
+     -1.5px 0 0 black,
+      0 1.5px 0 black,
+      0 -1.5px 0 black;
+  }
+      
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;    
+    }
+
+ section.topo-do-site{
+    padding: 20px 4%;
+}
+
+  section.topo-do-site .flex{
+  align-items: center;
+  gap: 100px;
+  }
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 35px;
+  }
+
+.txt-topo-site{
+    border: 1px solid rgb(26, 26, 26);
+    background-color: rgb(26, 26, 26);
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 15px rgba(22, 117, 61, 3.5);
+    margin-left: -35px;
+}
+
+.topo-do-site h3{
+  text-shadow: 
+    1px 1px 0 black,
+    -1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black,
+    1px 0 0 black,
+   -1px 0 0 black,
+    0 1px 0 black,
+    0 -1px 0 black;
+  margin: -10px;
+  color: #ffffff;
+  margin: 10px ;
+}
+
+/*logo flutuante*/
+.topo-do-site .img-topo-site img{
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}  
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.visao{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;  
+    margin-left: 200px;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+.veiculo-verde{
+    color: #00FF08;
+    text-shadow: 
+    1px 1px 0 black,
+    -1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black,
+    1px 0 0 black,
+   -1px 0 0 black,
+    0 1px 0 black,
+    0 -1px 0 black;
 }
