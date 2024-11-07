@@ -34,7 +34,9 @@ include('../AppView/NavBar.php');
             <img src="./../imagens/imagem-mediana.png" alt="Níveis medianos">
         </div>
     </div>
-
+    <?php
+    include('../AppView/Footer.php');
+    ?>
 </body>
 </html>
 

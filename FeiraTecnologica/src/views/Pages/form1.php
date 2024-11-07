@@ -49,5 +49,8 @@
     </div>
 </form>
   </main>
+  <?php
+    include('../AppView/Footer.php');
+    ?>
 </body>
 </html>

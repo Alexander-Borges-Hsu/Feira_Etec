@@ -107,7 +107,7 @@
     <br><br><br><br>
 
     <?php
-    include('C:\Users\gusta\Feira_Etec\FeiraTecnologica\src\views\AppView\Footer.php');
+    include('../AppView/Footer.php');
     ?>
 </body>
 

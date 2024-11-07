@@ -37,7 +37,9 @@
             <img src="./../imagens/imagem-ruim.png" alt="Níveis baixos de CO2">
         </div>
     </div>
-
+    <?php
+    include('../AppView/Footer.php');
+    ?>
 </body>
 </html>
 

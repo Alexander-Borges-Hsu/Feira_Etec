@@ -29,7 +29,9 @@
             <img src="./../imagens/folhaCO2.png" alt="Níveis baixos de CO2">
         </div>
     </div>
-
+    <?php
+    include('../AppView/Footer.php');
+    ?>
 </body>
 </html>
 
