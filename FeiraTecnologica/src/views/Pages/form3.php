@@ -61,8 +61,10 @@
       </form>
     </section>
   </main>
-  <!-- Lembrar da logica pra usar no controller -->
-   
+
+  <?php
+    include('../AppView/Footer.php');
+    ?>
   <script src="./../Script/script.js"></script>
  
 </body>

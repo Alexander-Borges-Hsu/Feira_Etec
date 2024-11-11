@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: "Comfortaa", serif;
+    color: white;
+    overflow: hidden;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+  }
+  
+  .hero {
+    background-image: url('./../imagens/Capturar.PNG'); /* Atualize para seu caminho de imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com 70% de opacidade */
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+  }
+
+  .hero-header{
+    display: flex;
+    align-items: center; /* Alinha a logo com o texto verticalmente */
+    justify-content: flex-start; /* Alinha ambos ao lado esquerdo */
+    gap: 10px; /* Espaçamento entre a logo e o texto */
+  }
+
+  .logo {
+    top: 30px;
+    max-width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.hero-header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.Errado {
+    color: red;
+}
+
+.Certo {
+    color: green;
+}
+
+.Invalido {
+    color: yellow;
+}
+
+
+/* Para telas menores, como celulares */
+@media (max-width: 576px) {
+    .logo {
+        width: 15vw; /* Aumenta a largura da logo em telas menores */
+        max-width: 50px; /* Define um limite para a logo em dispositivos móveis */
+    }
+
+    .hero-header h1 {
+        font-size: 2em; /* Reduz o tamanho do texto em dispositivos móveis */
+    }
+}
+
+/* Para telas médias, como tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .logo {
+        width: 12vw; /* Ajusta a logo para tablets */
+        max-width: 60px;
+    }
+
+    .hero-header h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Para telas grandes, como notebooks e monitores */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .logo {
+        width: 8vw; /* Para notebooks, a logo é um pouco maior */
+        max-width: 70px;
+    }
+
+    .hero-header h1 {
+        font-size: 3em;
+    }
+}
+
+/* Para televisores e monitores grandes */
+@media (min-width: 1201px) {
+    .logo {
+        width: 6vw; /* Para monitores muito grandes, a logo é ajustada */
+        max-width: 80px;
+    }
+
+    .hero-header h1 {
+        font-size: 3.5em;
+    }
+}
+
+  span {
+    color: green;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    background-color: #39806a;
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    background-color: #2f6b58;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero p {
+      font-size: 1em;
+    }
+  
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero h1 {
+      font-size: 2em;
+    }
+  
+    .hero p {
+      font-size: 0.9em;
+    }
+  
+    .btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  

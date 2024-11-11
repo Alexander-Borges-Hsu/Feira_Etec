@@ -12,15 +12,7 @@ a:focus {
     color: #6f6f6f;
     text-decoration: none;
     transition-timing-function: ease-in-out;
-    -ms-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
     transition-duration: .2s;
-    -ms-transition-duration: .2s;
-    -moz-transition-duration: .2s;
-    -webkit-transition-duration: .2s;
-    -o-transition-duration: .2s;
 }
 
 ul {
@@ -28,176 +20,180 @@ ul {
     padding: 0;
     list-style: none;
 }
-section {
-    padding: 60px 0;
-    min-height: 100vh;
-}
-.footer {
-padding: 100px 0px 0px;
-background-image: url('../imagens/backgroundfooter.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-}
 
+footer {
+    background-image: url('../imagens/backgroundfooter.jpg');  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;  
+    color: white;
+    z-index: 1; 
+    min-height: 150px;  
+}
 
 .footer .widget1 p {
-font-size: 16px;
-color: rgba(255, 255, 255, .6);
-margin-top: 26px;
+    font-size: 14px;  
+    color: rgba(255, 255, 255, .6);
+    margin-top: 26px;
 }
 
 .footer .widget1 p:hover {
-color: rgb(62, 112, 57);
+    color: rgb(62, 112, 57);
 }
 
 .footer .socialLinks {
-margin-top: 28px;
+    margin-top: 20px; 
 }
 
 .socialLinks ul li {
-display: inline-block;
+    display: inline-block;
 }
+
 .socialLinks ul li a i {
-display: block;
-margin: 0 2px;
-width: 40px;
-height: 40px;
-background: #fafafa;
-border-radius: 50%;
-text-align: center;
-margin-right: 5px;
-line-height: 40px;
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 0 2px;
+    width: 35px;  
+    height: 35px;
+    background: #fafafa;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+    line-height: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.socialLinks ul li a .fa-instagram {
+    color: #E1306C;
 }
 
 .socialLinks ul li a .fa-facebook-f {
-color: #4267b2;
+    color: #4267B2;
 }
 
 .socialLinks ul li a .fa-twitter {
-color: #1da1f2;
+    color: #1DA1F2;
 }
 
-.socialLinks ul li a .fa-google-plus-g {
-color: #dd5044;
+.socialLinks ul li a .fa-github {
+    color: #000000;
 }
-
-.socialLinks ul li a .fa-linkedin-in {
-color: #0177b5;
-}
-
 
 .socialLinks ul li a:hover i {
-color: #fff;
+    color: #fff;
 }
 
 .socialLinks ul li a:hover .fa-instagram {
-background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .socialLinks ul li a:hover .fa-facebook-f {
-background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .socialLinks ul li a:hover .fa-twitter {
-background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .socialLinks ul li a:hover .fa-github {
-background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
+
 footer .logo {
-max-width: 200px;
+    max-width: 180px;  
 }
 
 .footer h5 {
-font-weight: 500;
-margin-bottom: 28px;
-text-transform: capitalize;
-font-weight: 600;
-color: #fff;
-font-size: 21px
-}
-
-.footer .widget2 .media img {
-margin-right: 20px;
-max-width: 100px;
-}
-.footer .widget2 .media p {
-font-size: 16px;
-color: rgba(255, 255, 255, .8);;
--webkit-transition: all .3s ease-in-out;
--moz-transition: all .3s ease-in-out;
-transition: all .3s ease-in-out;
-font-weight: 600;
-line-height: 26px;
-}
-
-.footer .widget2 .media span {
-font-size: 12px;
-color: #ffb606;
-text-transform: uppercase;
-margin-top: 15px;
-display: block;
-}
-
-.footer .widget2 .media {
-margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;  
 }
 
 .footer .widget3 ul li a,
 .footer .widget4 ul li a {
-font-size: 16px;
-color: rgba(255, 255, 255, .6);;
-text-transform: capitalize;
-margin-bottom: 13px;
-display: block;
+    font-size: 14px; 
+    color: rgba(255, 255, 255, .6);
+    text-transform: capitalize;
+    margin-bottom: 10px;  
+    display: block;
 }
 
 .footer .widget3 ul li a:hover,
-.footer .widget4 ul li a:hover,
-.footer .widget2 a:hover p {
-color: #ffb606;
+.footer .widget4 ul li a:hover {
+    color: #ffb606;
 }
 
-.footer .widget3 h5 {
-margin-bottom: 22px;
-font-weight: 600;
-color: #fff;
-font-size: 21px;
-line-height: 32px;
-}
-
+.footer .widget3 h5,
 .footer .widget4 h5 {
-margin-bottom: 22px;
-font-weight: 600;
-color: #fff;
-font-size: 21px;
+    margin-bottom: 18px;  
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;  
 }
 
 .copyRightArea {
-margin-top: 83px;
-border-top: 1px solid rgba(255, 255, 255, 0.2);
-padding: 25px 0px 28px;
+    margin-top: 30px;  
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0; 
+    text-align: center;
 }
 
 .copyRightArea p {
-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.copyRightArea p a {
+    color: #ffb606;
+}
+
+.copyRightArea p a:hover {
+    color: #fff;
+}
+
+footer {
+    min-height: 150px; 
 }
 
 .spanfooter{
-font-size: 40px;
+    font-size: 50px;
 }
 
-.widget3{
-margin-left: 100px;
+.widget3, .widget4 {
+    margin-left: 0;
+    margin-top: 20px;
 }
 
-.widget4{
-margin-left: 100px;
-margin-top: 5px;
+.widget3 ul li, .widget4 ul li {
+    padding-bottom: 10px;
 }
+<<<<<<< HEAD
     
+=======
+
+footer .widget1,
+footer .widget3,
+footer .widget4 {
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 30px; /* Defina o espaçamento que você preferir */
+}
+
+.widget3, .widget4 {
+    margin-top: 40px;  /* Aumente o espaço entre as seções */
+    margin-bottom: 40px; /* Pode aumentar o espaço na parte inferior, se necessário */
+}
+
+/* Para a coluna "Links Rápidos" */
+.col-sm-6.col-lg-3:nth-child(2) {
+    margin-right: 30px; /* Aumente esse valor para mais espaço entre as colunas */
+}
+
+/* Para a coluna "Outros Links" */
+.col-sm-6.col-lg-3:nth-child(3) {
+    margin-left: 30px; /* Aumente esse valor para mais espaço entre as colunas */
+}
+
+>>>>>>> 1b6fb9fb7ae6f03f335f4b3964f7df68bb8e50c5

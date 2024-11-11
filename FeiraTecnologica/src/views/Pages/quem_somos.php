@@ -139,7 +139,7 @@
     <br><br><br><br>
 
     <?php
-    include('..\AppView\Footer.php');
+    include('../AppView/Footer.php');
     ?>
 
 </body>
