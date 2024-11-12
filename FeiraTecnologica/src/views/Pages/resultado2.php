@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VerdeCalc - Consumo de CO₂ Sustentável</title>
+
+    <link rel="stylesheet" href="./../Style/style_navbar.css">
+    
     <link rel="icon" href=".\..\imagens\imagem.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">

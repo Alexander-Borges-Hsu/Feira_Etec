@@ -79,44 +79,6 @@ button[type="submit"] {
     margin-top: 20px;
 }
 
-/* Estilo do Navbar */
-.navbar {
-    background-color: black; /* Cor de fundo do navbar */
-}
-
-.navbar-brand, .nav-link, .dropdown-item {
-    color: white !important; /* Todas as letras em branco */
-}
-
-.navbar-brand:hover, .nav-link:hover, .dropdown-item:hover {
-    color: lightgray !important; /* Cor ao passar o mouse */
-}
-
-/* Remove a cor de fundo ao expandir */
-.navbar-toggler {
-    background-color: white; /* Ícone do toggler visível */
-}
-
-/* Ajuste para o ícone de navegação quando o navbar é colapsado em telas menores */
-.navbar-toggler-icon {
-    filter: invert(1); /* Muda o ícone do toggle para branco */
-}
-
-/* Estilo do dropdown para fundo preto e letras verdes */
-.dropdown-menu {
-    background-color: black !important; /* Fundo preto */
-    border: none; /* Remove bordas */
-}
-
-.dropdown-item {
-    color: green !important; /* Letras verdes */
-}
-
-.dropdown-item:hover {
-    background-color: darkgreen; /* Fundo verde escuro ao passar o mouse */
-    color: white !important; /* Letras brancas ao passar o mouse */
-}
-
 @keyframes slideIn {
     from {
       opacity: 0;

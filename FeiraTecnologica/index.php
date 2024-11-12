@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <!-- Link para o arquivo de estilo CSS externo personalizado -->
-    <link rel="stylesheet" href="./src/views/Style/style2.css">
+    <link rel="stylesheet" href="./src/views/Style/style.css">
     <!-- Importação de scripts do Bootstrap para funcionalidades JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./src/views/Script/script.js"></script>

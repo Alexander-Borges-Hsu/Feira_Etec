@@ -8,23 +8,8 @@
 h2 {
   color: white;
 }
-.navbar {
-  background-color: black;
-  font-size: 20px;
-}
 
-.navbar-brand,
-.nav-link {
-  color: white !important;
-  margin-left: 20px;
-}
 
-.nav-link:hover {
-  color: #d1e7dd !important;
-}
-.Vd {
-  color: green;
-}
 body {
   background-image: url('./../imagens/selvas-plantas.PNG');
   background-size: cover;
@@ -33,21 +18,7 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Kurale", serif;
-  overflow-y: auto;
-  overflow: hidden;
-}
-
-.navbar {
-  background-color: black;
-  font-size: 20px;
-}
-.navbar-brand,
-.nav-link {
-  color: white !important;
-  margin-left: 20px;
-}
-.nav-link:hover {
-  color: #d1e7dd !important;
+  overflow-y: auto; /* Alterado para auto */
 }
 
 main {
@@ -64,7 +35,7 @@ label {
 }
 
 .transporte-individual {
-  background-color: #292929;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -72,6 +43,7 @@ label {
   max-width: 800px;
   margin-top: 50px;
   color: white;
+  animation: slideIn 2s ease-out; /* Aplica a animação ao formulário */
 }
 
 .escolha-veiculo {
@@ -132,15 +104,12 @@ button[type="submit"] {
   width: 100%;
 }
 
-/* Media Queries */
+
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
   .escolha-veiculo {
     flex-direction: column;
     align-items: center;
-  }
-
-  body {
-      overflow: auto;
   }
 
   button {
@@ -149,16 +118,68 @@ button[type="submit"] {
     margin: 10px 0;
   }
 
-  button p {
-    font-size: 1rem; /* Ajusta o tamanho do texto dos botões */
-  }
-
   .transporte-individual {
     width: 95%;
+    padding: 15px;
   }
 
   input[type="number"], select, button[type="submit"] {
-    font-size: 1rem; /* Tamanhos de fontes ajustados para melhor legibilidade */
-    padding: 12px; /* Aumenta o espaçamento interno dos campos e botões */
+    font-size: 1rem;
+    padding: 12px;
   }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .transporte-individual {
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .escolha-veiculo {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  button {
+    width: 45%;
+    margin: 5px;
+  }
+
+  input[type="number"], select, button[type="submit"] {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsividade para televisores e telas grandes */
+@media (min-width: 1200px) {
+  .transporte-individual {
+    max-width: 1000px;
+  }
+
+  body {
+    overflow-y: scroll;
+  }
+
+  button img {
+    width: 70px;
+    height: 70px;
+  }
+
+  button p {
+    font-size: 1.2rem;
+  }
+
+  /* Animação de deslizamento e fade-in no formulário */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 }

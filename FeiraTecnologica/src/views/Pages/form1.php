@@ -6,10 +6,10 @@
     <link rel="icon" href=".\..\imagens\imagem.png">
     <title>VerdeCalc</title>
   
-    <link rel="stylesheet" href="./../Style/style.css">
-    <link rel="stylesheet" href="./../Style/teste.css">
-    
+    <link rel="stylesheet" href="./../Style/style_navbar.css">
 
+    <link rel="stylesheet" href="./../Style/form1.css">
+    
     <script src="./../Script/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
