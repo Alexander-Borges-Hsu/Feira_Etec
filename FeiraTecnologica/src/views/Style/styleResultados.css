@@ -5,16 +5,14 @@ body {
     background-size: cover;
     background-position: center;
     margin: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: 60px; /* Adicionando espaço para evitar que a navbar sobreponha o conteúdo */
     overflow-x: hidden; /* Evitar rolagem horizontal */
 }
 
 
-.container {
+.containerresult {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     padding: 40px;
@@ -24,17 +22,20 @@ body {
     text-align: center;
     position: relative;
     margin-top: 60px; /* Evitar sobreposição da navbar */
+    margin-bottom: 50px;
+    margin-left: 450px;
     animation: fadeIn 1s ease-in-out;
 }
 
-.container h1 {
+.containerresult h1 {
     color: #b8f672;
 }
 
-.container p {
+.containerresult p {
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 20px;
+    text-align:justify;
 }
 
 .main-title {
@@ -47,7 +48,7 @@ body {
     transform: translateX(-50%);
 }
 
-.container p {
+.containerresult p {
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 20px;
@@ -82,7 +83,7 @@ body {
 /* Estilos específicos para cada tela */
 
 /* Tela 1 - Sustentável */
-.tela1 .container h1 {
+.tela1 .containerresult h1 {
     color: #b8f672;
 }
 
@@ -95,7 +96,7 @@ body {
 }
 
 /* Tela 2 - Níveis medianos */
-.tela2 .container h1 {
+.tela2 .containerresult h1 {
     color: #eded3e;
 }
 
@@ -108,7 +109,7 @@ body {
 }
 
 /* Tela 3 - Consumo alto */
-.tela3 .container h1 {
+.tela3 .containerresult h1 {
     color: #fa1a1a;
 }
 
@@ -123,14 +124,14 @@ body {
 
 /* Monitores e TVs grandes */
 @media (min-width: 1200px) {
-    .container {
+    .containerresult {
         padding: 50px;
         max-width: 1000px;
     }
-    .container h1 {
+    .containerresult h1 {
         font-size: 38px;
     }
-    .container p {
+    .containerresult p {
         font-size: 20px;
     }
     .image-section img {
@@ -140,27 +141,27 @@ body {
 
 /* Notebooks e monitores */
 @media (min-width: 1024px) and (max-width: 1199px) {
-    .container {
+    .containerresult {
         padding: 40px;
         max-width: 900px;
     }
-    .container h1 {
+    .containerresult h1 {
         font-size: 34px;
     }
-    .container p {
+    .containerresult p {
         font-size: 18px;
     }
 }
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .container {
+    .containerresult {
         padding: 30px;
     }
-    .container h1 {
+    .containerresult h1 {
         font-size: 28px;
     }
-    .container p {
+    .containerresult p {
         font-size: 16px;
     }
     .image-section img {
@@ -175,13 +176,14 @@ body {
         padding: 0;
         overflow-y: auto;
     }
-    .container {
+    .containerresult {
         padding: 20px;
+        margin-left: 17px;
     }
-    .container h1 {
+    .containerresult h1 {
         font-size: 22px;
     }
-    .container p {
+    .containerresult p {
         font-size: 14px;
     }
     .image-section img {

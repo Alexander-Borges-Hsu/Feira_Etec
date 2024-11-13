@@ -23,7 +23,7 @@
   include('../AppView/NavBar.php');
 ?>
       
-    <div class="container">
+    <div class="containerresult">
         <h1>Alerta! Seu consumo de CO₂ está muito alto.</h1>
         <p>Dicas para Melhoria : <br>
 

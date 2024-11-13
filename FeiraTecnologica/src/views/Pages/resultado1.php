@@ -23,7 +23,7 @@
    <?php 
   include('../AppView/NavBar.php');
 ?>
-    <div class="container">
+    <div class="containerresult">
         <h1>Parabéns! Seu consumo de CO₂ está em níveis sustentáveis!</h1>
         <p>Seu consumo de gás carbônico está em um nível exemplar, muito abaixo da média global. Isso significa que suas ações estão contribuindo diretamente para a preservação do meio ambiente e a mitigação das mudanças climáticas.</p>
         <p class="texto">Você está ajudando a construir um futuro mais verde e equilibrado para o planeta.</p>

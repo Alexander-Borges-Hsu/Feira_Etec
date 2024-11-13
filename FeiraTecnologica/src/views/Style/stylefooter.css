@@ -33,7 +33,8 @@ footer {
 }
 
 .footer .widget1 p {
-    font-size: 14px;  
+    text-align:justify;
+    font-size: 16px;  
     color: rgba(255, 255, 255, .6);
     margin-top: 26px;
 }
@@ -178,7 +179,12 @@ footer .widget4 {
     gap: 30px; /* Defina o espaçamento que você preferir */
 }
 
-.widget3, .widget4 {
+.widget3{
+    margin-left:90px;
+    margin-top: 40px;  /* Aumente o espaço entre as seções */
+    margin-bottom: 40px; /* Pode aumentar o espaço na parte inferior, se necessário */
+}
+.widget4{
     margin-top: 40px;  /* Aumente o espaço entre as seções */
     margin-bottom: 40px; /* Pode aumentar o espaço na parte inferior, se necessário */
 }
@@ -193,3 +199,11 @@ footer .widget4 {
     margin-left: 30px; /* Aumente esse valor para mais espaço entre as colunas */
 }
 
+@media (max-width: 767px){
+    .widget3{
+        margin-left: 0px;
+    }
+    .widget4{
+        margin-left:0px;
+    }
+}
