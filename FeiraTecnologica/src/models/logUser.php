@@ -30,14 +30,10 @@ class logUser{
                  
                 
             } else {
-                echo '<script>
-                         alert("Usuario ou senha errados!");
-                     </script>';
+                header("Location: src/views/Pages/cadastroErrado.php");
             }
         } else {
-            echo '<script>
-                    alert("Usuario ou senha errados!");
-                </script>';
+            header("Location: src/views/Pages/cadastroErrado.php");
         }
     }
 

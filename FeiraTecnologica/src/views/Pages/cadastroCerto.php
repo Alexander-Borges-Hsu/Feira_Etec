@@ -18,9 +18,9 @@
       <h1>Verde<span>Calc</span></h1>
       <br>
       <h2 class="Certo">Cadastro feito com Sucesso</h2>
-      <p>Clique em "Continuar" para dar andamento em nossa Calculadora</p>
+      <p>Faça o Login para continuar</p>
       <br>
-      <a href="#" class="btn">Continuar</a>
+      <a href="../../../index.php?m=&k=RDCT" class="btn">Continuar</a>
     </div>
   </section>
 </body>

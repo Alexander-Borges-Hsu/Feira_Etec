@@ -33,7 +33,7 @@ class cadUser{
         $stmt->execute();
     
         if ($stmt->rowCount() > 0) {
-            echo('<script>alert("Nome de usuário já está em uso, tente novamente.")</script>');
+            header("Location: ../src/views/Pages/cadastroInvalido.php");
         } else {
         // Lógica de inserção no banco de dados
           $senha = password_hash($recebeSenha, PASSWORD_DEFAULT);
@@ -42,7 +42,7 @@ class cadUser{
           $stmt->bindParam(':senha', $senha);
           $stmt->bindParam(':email', $recebeEmail);
           $stmt->execute();
-          echo('<script>alert("Cadastro realizado com sucesso!")</script>');
+          header("Location: ../src/views/Pages/cadastroCerto.php");
           //VER COMO FUNCIONA OS ECHO PARA O APP CONTROLLER
     }}
 

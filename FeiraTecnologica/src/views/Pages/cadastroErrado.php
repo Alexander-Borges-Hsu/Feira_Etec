@@ -18,9 +18,9 @@
       <h1>Verde<span>Calc</span></h1>
       <br>
       <h2 class="Errado">Ops, Parece que houve um problema</h2>
-      <p>Aparentemente seus dados de login estão errados. Coloque a senha e o nome correto de usuário e tente novamente.</p>
+      <p>Usuário ou senha errados, tente novamente</p>
       <br>
-      <a href="#" class="btn">Continuar</a>
+      <a href="../../../index.php?m=&k=RDCT" class="btn">Continuar</a>
     </div>
   </section>
 </body>

@@ -18,9 +18,9 @@
       <h1>Verde<span>Calc</span></h1>
       <br>
       <h2 class="Invalido">Ops, Parece que houve um problema</h2>
-      <p>Aparentemente seus dados de login já estão sendo usados, crie outro nome e senha e aproveite nossa calculadora</p>
+      <p>Nome de usuário em uso, tente novamente</p>
       <br>
-      <a href="#" class="btn">Continuar</a>
+      <a href="../../../index.php?m=&k=RDCT" class="btn">Continuar</a>
     </div>
   </section>
 </body>
