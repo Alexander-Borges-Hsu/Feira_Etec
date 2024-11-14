@@ -22,19 +22,19 @@ ul {
 }
 
 footer {
-    background-image: url('../imagens/backgroundfooter.jpg');  
+    background-image: url('../imagens/backgroundfooter.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 50px 0;  
+    padding: 50px 0;
     color: white;
-    z-index: 1; 
-    min-height: 150px;  
+    z-index: 1;
+    min-height: 150px;
 }
 
 .footer .widget1 p {
-    text-align:justify;
-    font-size: 16px;  
+    text-align: justify;
+    font-size: 16px;
     color: rgba(255, 255, 255, .6);
     margin-top: 26px;
 }
@@ -44,7 +44,7 @@ footer {
 }
 
 .footer .socialLinks {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .socialLinks ul li {
@@ -54,7 +54,7 @@ footer {
 .socialLinks ul li a i {
     display: block;
     margin: 0 2px;
-    width: 35px;  
+    width: 35px;
     height: 35px;
     background: #fafafa;
     border-radius: 50%;
@@ -101,21 +101,21 @@ footer {
 }
 
 footer .logo {
-    max-width: 180px;  
+    max-width: 180px;
 }
 
 .footer h5 {
     font-weight: 600;
     color: #fff;
-    font-size: 18px;  
+    font-size: 18px;
 }
 
 .footer .widget3 ul li a,
 .footer .widget4 ul li a {
-    font-size: 14px; 
+    font-size: 14px;
     color: rgba(255, 255, 255, .6);
     text-transform: capitalize;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
     display: block;
 }
 
@@ -126,16 +126,16 @@ footer .logo {
 
 .footer .widget3 h5,
 .footer .widget4 h5 {
-    margin-bottom: 18px;  
+    margin-bottom: 18px;
     font-weight: 600;
     color: #fff;
-    font-size: 18px;  
+    font-size: 18px;
 }
 
 .copyRightArea {
-    margin-top: 30px;  
+    margin-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 15px 0; 
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -152,19 +152,21 @@ footer .logo {
 }
 
 footer {
-    min-height: 150px; 
+    min-height: 150px;
 }
 
-.spanfooter{
+.spanfooter {
     font-size: 50px;
 }
 
-.widget3, .widget4 {
+.widget3,
+.widget4 {
     margin-left: 0;
     margin-top: 20px;
 }
 
-.widget3 ul li, .widget4 ul li {
+.widget3 ul li,
+.widget4 ul li {
     padding-bottom: 10px;
 }
 
@@ -176,34 +178,43 @@ footer .widget4 {
 
 .row {
     display: flex;
-    gap: 30px; /* Defina o espaçamento que você preferir */
+    gap: 30px;
+    /* Defina o espaçamento que você preferir */
 }
 
-.widget3{
-    margin-left:90px;
-    margin-top: 40px;  /* Aumente o espaço entre as seções */
-    margin-bottom: 40px; /* Pode aumentar o espaço na parte inferior, se necessário */
+.widget3 {
+    margin-left: 90px;
+    margin-top: 40px;
+    /* Aumente o espaço entre as seções */
+    margin-bottom: 40px;
+    /* Pode aumentar o espaço na parte inferior, se necessário */
 }
-.widget4{
-    margin-top: 40px;  /* Aumente o espaço entre as seções */
-    margin-bottom: 40px; /* Pode aumentar o espaço na parte inferior, se necessário */
+
+.widget4 {
+    margin-top: 40px;
+    /* Aumente o espaço entre as seções */
+    margin-bottom: 40px;
+    /* Pode aumentar o espaço na parte inferior, se necessário */
 }
 
 /* Para a coluna "Links Rápidos" */
 .col-sm-6.col-lg-3:nth-child(2) {
-    margin-right: 30px; /* Aumente esse valor para mais espaço entre as colunas */
+    margin-right: 30px;
+    /* Aumente esse valor para mais espaço entre as colunas */
 }
 
 /* Para a coluna "Outros Links" */
 .col-sm-6.col-lg-3:nth-child(3) {
-    margin-left: 30px; /* Aumente esse valor para mais espaço entre as colunas */
+    margin-left: 30px;
+    /* Aumente esse valor para mais espaço entre as colunas */
 }
 
-@media (max-width: 767px){
-    .widget3{
+@media (max-width: 767px) {
+    .widget3 {
         margin-left: 0px;
     }
-    .widget4{
-        margin-left:0px;
+
+    .widget4 {
+        margin-left: 0px;
     }
 }

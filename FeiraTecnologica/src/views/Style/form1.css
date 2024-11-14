@@ -6,7 +6,8 @@
     color: white;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     font-family: "Kurale", serif;
     color: white;
@@ -21,17 +22,23 @@ body {
     background-position: center;
     color: white;
     overflow-x: hidden;
-    min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da tela */
+    min-height: 100vh;
+    /* Garante que o body ocupe no mínimo 100% da altura da tela */
 }
 
 html {
-    height: 100%; /* Garante que o HTML ocupe 100% da altura */
-    overflow-y: auto; /* Permite a rolagem vertical */
+    height: 100%;
+    /* Garante que o HTML ocupe 100% da altura */
+    overflow-y: auto;
+    /* Permite a rolagem vertical */
 }
 
 
-h1, h2, label {
-    color: #ffffff; /* Garante que os títulos e labels estejam brancos */
+h1,
+h2,
+label {
+    color: #ffffff;
+    /* Garante que os títulos e labels estejam brancos */
 }
 
 
@@ -41,14 +48,18 @@ h1, h2, label {
 
 /* Estilo dos blocos de formulário */
 .consumo {
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com opacidade */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo preto com opacidade */
     padding: 30px;
     border-radius: 10px;
     text-align: center;
     color: white;
-    margin-bottom: 30px; /* Espaçamento entre os blocos */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
-    animation: slideIn 0.6s ease-out; /* Aplica a animação ao formulário */
+    margin-bottom: 30px;
+    /* Espaçamento entre os blocos */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra para destaque */
+    animation: slideIn 0.6s ease-out;
+    /* Aplica a animação ao formulário */
 }
 
 label {
@@ -60,13 +71,17 @@ label {
 
 input[type="text"],
 input[type="number"] {
-    width: 90%; /* Ajuste para ocupar 90% da largura do bloco */
-    max-width: 300px; /* Limita o tamanho máximo */
+    width: 90%;
+    /* Ajuste para ocupar 90% da largura do bloco */
+    max-width: 300px;
+    /* Limita o tamanho máximo */
     padding: 10px;
     border-radius: 5px;
     border: none;
-    margin: 10px auto 15px; /* Espaçamento e centralização */
-    display: block; /* Centralização no bloco */
+    margin: 10px auto 15px;
+    /* Espaçamento e centralização */
+    display: block;
+    /* Centralização no bloco */
     color: black;
 }
 
@@ -81,14 +96,15 @@ button[type="submit"] {
 
 @keyframes slideIn {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
 
 
 /* Media Queries */
@@ -96,6 +112,7 @@ button[type="submit"] {
     .container {
         padding: 10px;
     }
+
     h1 {
         font-size: 1.5em;
     }
@@ -106,6 +123,7 @@ button[type="submit"] {
         padding: 20px;
         margin: 10px 0;
     }
+
     h2 {
         font-size: 1.2em;
     }

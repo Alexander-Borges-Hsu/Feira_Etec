@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VerdeCalc</title>
 
   <link rel="stylesheet" href="./../Style/style_navbar.css">
-  
+
   <link rel="icon" href=".\..\imagens\imagem.png">
 
   <link rel="stylesheet" href="./../Style/form2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-  <?php 
-    include('../AppView/NavBar.php');
+  <?php
+  include('../AppView/NavBar.php');
   ?>
 
   <main>
@@ -37,13 +42,13 @@
 
         <!-- Botão Ambos -->
         <button id="ambos-btn">
-         <img src="./../imagens/ambos.png" alt="Ambos">
+          <img src="./../imagens/ambos.png" alt="Ambos">
           <p>Ambos</p>
         </button>
-        
+
         <!--Botão da Moto-->
         <button id="moto-btn">
-         <img src="./../imagens/moto-png-certa.png" alt="Moto">
+          <img src="./../imagens/moto-png-certa.png" alt="Moto">
           <p>Moto</p>
         </button>
       </div>
@@ -52,36 +57,37 @@
 
       <!--Campo onde informa, qual tipo de combustivel será usado trazendo tres opções Gasolina, Gás Natural, Diesel-->
 
-      <form id="formulario" class="informacoes-complementares"  action = "../../../index.php"  method="POST">
-      <input type="text" name="k" value="CCL" style="display: none;">
+      <form id="formulario" class="informacoes-complementares" action="../../../index.php" method="POST">
+        <input type="text" name="k" value="CCL" style="display: none;">
         <label for="combustivel">Combustível utilizado:</label>
-          <select id="combustivel" name="combustivel" required placeholder="a">
-            <option value="gasolina">Gasolina</option>
-            <option value="gas_natural">Gás Natural</option>
-            <option value="diesel">Diesel</option>
-            <option value="nao-sei">Não sei informar</option>
-         </select>
+        <select id="combustivel" name="combustivel" required placeholder="a">
+          <option value="gasolina">Gasolina</option>
+          <option value="gas_natural">Gás Natural</option>
+          <option value="diesel">Diesel</option>
+          <option value="nao-sei">Não sei informar</option>
+        </select>
 
-       <!--Campo onde informa, quantos kms o user rodou por dia-->
+        <!--Campo onde informa, quantos kms o user rodou por dia-->
 
-       <label for="kms">Kms Rodados Por Dia (Digite 0 caso não utilize):</label>
-       <input type="number" id="kms" name="kmdia" required>
+        <label for="kms">Kms Rodados Por Dia (Digite 0 caso não utilize):</label>
+        <input type="number" id="kms" name="kmdia" required>
 
-      <!--Dar proximo, e ir a proximo formulario-->
-       <button type="submit">Próximo</button>
+        <!--Dar proximo, e ir a proximo formulario-->
+        <button type="submit">Próximo</button>
 
       </form>
     </section>
   </main>
-  
+
   <?php
-    include('../AppView/Footer.php');
-    ?>
+  include('../AppView/Footer.php');
+  ?>
 
 
 
 
   <script src="./../Script/script.js"></script>
- 
+
 </body>
+
 </html>

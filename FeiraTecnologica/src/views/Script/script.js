@@ -1,13 +1,13 @@
 function formatCurrency(input) {
     let value = input.value.replace(/\D/g, "");
-    value = (value / 100).toFixed(2); 
-    input.value = value.toString().replace(".", ","); 
+    value = (value / 100).toFixed(2);
+    input.value = value.toString().replace(".", ",");
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const moneyInput = document.getElementById("moneyInput");
- 
-    moneyInput.addEventListener("input", function() {
+
+    moneyInput.addEventListener("input", function () {
         formatCurrency(moneyInput);
     });
 });
@@ -42,33 +42,33 @@ document.addEventListener("DOMContentLoaded", function () {
 //---------------------------
 //Codigo do Davi, Form 2 e Form 3 (Botões, Mudança de Cor);
 //---------------------------
-   
+
 // Função para lidar com os transportes individuais (Carro, Moto, Ambos)
-    
+
 function configurarTransportesIndividuais() {
-// Seleciona os botões carro, moto e ambos
+    // Seleciona os botões carro, moto e ambos
     const carroBtn = document.getElementById('carro-btn');
     const motoBtn = document.getElementById('moto-btn');
     const ambosBtn = document.getElementById('ambos-btn');
 
-/*Verifica se os botões existem na pagina
-Pensei em colocar caso fosse carregado em outra pagina*/
+    /*Verifica se os botões existem na pagina
+    Pensei em colocar caso fosse carregado em outra pagina*/
 
     if (!carroBtn || !motoBtn || !ambosBtn) {
         return;
-// O return interrompe a função se não houver os botões
+        // O return interrompe a função se não houver os botões
     }
 
-//Variavel que vai armazenar o tipo de veiculo   
+    //Variavel que vai armazenar o tipo de veiculo   
     let veiculoSelecionado = "";
 
-//Função para mudar as cores e a logica dos botões
+    //Função para mudar as cores e a logica dos botões
     function atualizarSelecao(veiculo) {
         carroBtn.classList.remove('ativo');
         motoBtn.classList.remove('ativo');
         ambosBtn.classList.remove('ativo');
 
-//Coloca a classe "ativo" quando clicar no botão
+        //Coloca a classe "ativo" quando clicar no botão
         if (veiculo === 'Carro') {
             veiculoSelecionado = 'Carro';
             carroBtn.classList.add('ativo');
@@ -95,7 +95,7 @@ Pensei em colocar caso fosse carregado em outra pagina*/
     });
 
     // Prevenir envio de formulário sem preenchimento
-    
+
 }
 
 // Função para lidar com os transportes públicos (Ônibus, Ambos, Transportes Ferroviários)
@@ -142,29 +142,29 @@ function configurarTransportesPublicos() {
         atualizarSelecao('Transportes Ferroviários');
     });
 
-    
+
 }
 
 // Chama a função, dependendo de qual for a pagina ser preenchida
 document.addEventListener('DOMContentLoaded', function () {
     configurarTransportesIndividuais();
-//Chama a função dos transportes individuais
+    //Chama a função dos transportes individuais
     configurarTransportesPublicos();
-//Chama a função dos transportes publicos
+    //Chama a função dos transportes publicos
 });
 
- //--------------------------
- /* O Código acima foi feito pelo Davi*/
- //--------------------------
+//--------------------------
+/* O Código acima foi feito pelo Davi*/
+//--------------------------
 
 
 
 
 
 
-      document.getElementById("integerInput").addEventListener("input", function() {
-        this.value = this.value.replace(/[^0-9]/g, ''); // Remove qualquer caractere não numérico
-    });
+document.getElementById("integerInput").addEventListener("input", function () {
+    this.value = this.value.replace(/[^0-9]/g, ''); // Remove qualquer caractere não numérico
+});
 
-    /*O código acima foi feito para somente válidar numeros inteiros na página form1 em gás natural e em maços de cigarro*/
+/*O código acima foi feito para somente válidar numeros inteiros na página form1 em gás natural e em maços de cigarro*/
 

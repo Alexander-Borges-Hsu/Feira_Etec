@@ -1,15 +1,18 @@
 <?php
 namespace APP\models;
 
-class logUser{
+class logUser
+{
 
     private $pdo;
-    
-    public function __construct(\PDO $conn){
+
+    public function __construct(\PDO $conn)
+    {
         $this->pdo = $conn;
     }
 
-    public function verify($coluneas){
+    public function verify($coluneas)
+    {
         $this->username = $_POST['usuario'];
         $this->password = trim($_POST['senha']);
 
@@ -23,12 +26,12 @@ class logUser{
 
             // Verificar a senha
             $bdPass = $user['newsenha'];
-            
+
             if (password_verify($this->password, $bdPass)) {
                 // Login bem-sucedido                 
                 header("Location: ./src/views/Pages/tela_inicial.php");
-                 
-                
+
+
             } else {
                 header("Location: src/views/Pages/cadastroErrado.php");
             }

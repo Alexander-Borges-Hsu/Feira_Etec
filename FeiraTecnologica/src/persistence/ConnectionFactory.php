@@ -1,7 +1,8 @@
 <?php
 namespace APP\persistence;
 
-class ConnectionFactory{
+class ConnectionFactory
+{
 
     private static $db_name = "bdlogin";
     private static $db_host = "127.0.0.1";
@@ -11,16 +12,17 @@ class ConnectionFactory{
     private static $conn = null;
 
 
-    static function getConnection(){
+    static function getConnection()
+    {
         $connectionString = "mysql:host=" . self::$db_host . ";dbname=" . self::$db_name . ";dbport=" . self::$db_port;
 
-        if(self::$conn == null){
-            self::$conn = new \PDO ($connectionString, self::$db_username, self::$db_password);
+        if (self::$conn == null) {
+            self::$conn = new \PDO($connectionString, self::$db_username, self::$db_password);
             self::$conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         }
-        
+
         return self::$conn;
-        
+
 
     }
 

@@ -1,12 +1,14 @@
 <?php
 namespace APP\controller;
 
-class redirectController{
+class redirectController
+{
 
-    public function redirect($page){
-        if($page == "index"){
+    public function redirect($page)
+    {
+        if ($page == "index") {
             header("Location: ../../index.php");
-        }else if ($page ){
+        } else if ($page) {
             header("Location: ../../src/views/Pages/" . $page . ".php");
         }
 
