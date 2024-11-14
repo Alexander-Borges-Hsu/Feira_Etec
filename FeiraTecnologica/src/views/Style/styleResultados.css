@@ -11,7 +11,6 @@ body {
     overflow-x: hidden; /* Evitar rolagem horizontal */
 }
 
-
 .containerresult {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
@@ -23,7 +22,7 @@ body {
     position: relative;
     margin-top: 60px; /* Evitar sobreposição da navbar */
     margin-bottom: 50px;
-    margin-left: 450px;
+    margin-left: 250px;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -154,9 +153,11 @@ body {
 }
 
 /* Tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1023px) {
     .containerresult {
-        padding: 30px;
+        padding: 150px;
+        margin-left: 5px;
+        
     }
     .containerresult h1 {
         font-size: 28px;

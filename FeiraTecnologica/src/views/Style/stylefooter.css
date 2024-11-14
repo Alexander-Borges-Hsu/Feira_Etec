@@ -176,30 +176,39 @@ footer .widget4 {
 
 .row {
     display: flex;
-    gap: 30px; /* Defina o espaçamento que você preferir */
+    gap: 30px; 
 }
 
 .widget3{
     margin-left:90px;
-    margin-top: 40px;  /* Aumente o espaço entre as seções */
-    margin-bottom: 40px; /* Pode aumentar o espaço na parte inferior, se necessário */
+    margin-top: 40px;  
+    margin-bottom: 40px; 
 }
 .widget4{
-    margin-top: 40px;  /* Aumente o espaço entre as seções */
-    margin-bottom: 40px; /* Pode aumentar o espaço na parte inferior, se necessário */
+    margin-top: 40px;  
+    margin-bottom: 40px; 
 }
 
-/* Para a coluna "Links Rápidos" */
 .col-sm-6.col-lg-3:nth-child(2) {
-    margin-right: 30px; /* Aumente esse valor para mais espaço entre as colunas */
+    margin-right: 30px; 
 }
 
-/* Para a coluna "Outros Links" */
 .col-sm-6.col-lg-3:nth-child(3) {
-    margin-left: 30px; /* Aumente esse valor para mais espaço entre as colunas */
+    margin-left: 30px; 
 }
 
+/* Responsividade */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+    
+}
+
+/* Celular */
 @media (max-width: 767px){
+    footer{
+        margin-right: 0px;
+    }
     .widget3{
         margin-left: 0px;
     }
