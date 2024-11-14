@@ -9,7 +9,6 @@ body {
     align-items: center;
     height: 100vh;
     overflow-x: hidden;
-    /* Evitar rolagem horizontal */
 }
 
 .containerresult {
@@ -21,10 +20,7 @@ body {
     color: white;
     text-align: center;
     position: relative;
-    margin-top: 60px;
-    /* Evitar sobreposição da navbar */
-    margin-bottom: 50px;
-    margin-left: 250px;
+    margin: 60px auto 50px auto; 
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -49,13 +45,6 @@ body {
     transform: translateX(-50%);
 }
 
-.containerresult p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-/* Animação na imagem (Elemento 4) */
 .image-section img {
     width: 100%;
     max-width: 300px;
@@ -64,27 +53,93 @@ body {
     transition: transform 0.3s ease;
 }
 
-
 .image-section img:hover {
     transform: scale(1.05);
-    /* Aumentar a imagem ao passar o mouse */
 }
 
-/* Adicionando uma leve animação de fade-in na entrada do container */
+/* Animação na imagem */
 @keyframes fadeIn {
     0% {
         opacity: 0;
         transform: translateY(20px);
-        /* Leve deslizamento ao aparecer */
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Estilos específicos para cada tela */
+/* Responsividade */
+
+/* Monitores grandes */
+@media (min-width: 1200px) {
+    .containerresult {
+        padding: 50px;
+        max-width: 1000px;
+    }
+    .containerresult h1 {
+        font-size: 38px;
+    }
+    .containerresult p {
+        font-size: 20px;
+    }
+    .image-section img {
+        width: 350px;
+    }
+}
+
+/* Notebooks */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .containerresult {
+        padding: 40px;
+        max-width: 900px;
+    }
+    .containerresult h1 {
+        font-size: 34px;
+    }
+    .containerresult p {
+        font-size: 18px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .containerresult {
+        padding: 40px;
+        margin: 60px auto; /* Centralizando o container */
+    }
+    .containerresult h1 {
+        font-size: 28px;
+    }
+    .containerresult p {
+        font-size: 16px;
+    }
+    .image-section img {
+        width: 250px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 767px) {
+    body {
+        height: auto;
+        padding: 0;
+        overflow-y: auto;
+    }
+    .containerresult {
+        padding: 20px;
+        margin: 60px auto; /* Centralizando o container */
+    }
+    .containerresult h1 {
+        font-size: 22px;
+    }
+    .containerresult p {
+        font-size: 14px;
+    }
+    .image-section img {
+        width: 200px;
+    }
+}
 
 /* Tela 1 - Sustentável */
 .tela1 .containerresult h1 {
@@ -123,89 +178,4 @@ body {
 
 .tela3 .texto {
     color: #c96565;
-}
-
-/* Responsividade */
-
-/* Monitores e TVs grandes */
-@media (min-width: 1200px) {
-    .containerresult {
-        padding: 50px;
-        max-width: 1000px;
-    }
-
-    .containerresult h1 {
-        font-size: 38px;
-    }
-
-    .containerresult p {
-        font-size: 20px;
-    }
-
-    .image-section img {
-        width: 350px;
-    }
-}
-
-/* Notebooks e monitores */
-@media (min-width: 1024px) and (max-width: 1199px) {
-    .containerresult {
-        padding: 40px;
-        max-width: 900px;
-    }
-
-    .containerresult h1 {
-        font-size: 34px;
-    }
-
-    .containerresult p {
-        font-size: 18px;
-    }
-}
-
-/* Tablets */
-@media (min-width: 769px) and (max-width: 1023px) {
-    .containerresult {
-        padding: 150px;
-        margin-left: 5px;
-        
-    }
-
-    .containerresult h1 {
-        font-size: 28px;
-    }
-
-    .containerresult p {
-        font-size: 16px;
-    }
-
-    .image-section img {
-        width: 250px;
-    }
-}
-
-/* Celulares */
-@media (max-width: 767px) {
-    body {
-        height: auto;
-        padding: 0;
-        overflow-y: auto;
-    }
-
-    .containerresult {
-        padding: 20px;
-        margin-left: 17px;
-    }
-
-    .containerresult h1 {
-        font-size: 22px;
-    }
-
-    .containerresult p {
-        font-size: 14px;
-    }
-
-    .image-section img {
-        width: 200px;
-    }
 }
