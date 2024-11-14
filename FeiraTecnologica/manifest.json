@@ -1,0 +1,16 @@
+{
+    "name": "VerdeCalc",
+    "short_name": "VerdeCalc",
+    "description": "Web App pra feira tecnológica Etec ZL.",
+    "display": "fullscreen",
+    "start_url": "index.php",
+    "scope": "/",
+
+    "icons": [
+      {
+        "src": "./src/views/imagens/Logo3.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
