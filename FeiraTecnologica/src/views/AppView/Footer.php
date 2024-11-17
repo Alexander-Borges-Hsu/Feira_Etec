@@ -65,7 +65,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="../../../index.php?m=quem_somos&k=RDCT">
                                 Quem somos
                             </a>
                         </li>
