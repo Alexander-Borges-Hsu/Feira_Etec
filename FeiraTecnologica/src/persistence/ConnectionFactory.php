@@ -10,6 +10,7 @@ class ConnectionFactory
     private static $db_username = "alexanderVC";
     private static $db_password = "VCalc2048@";
     private static $conn = null;
+    // Testando banco na azure
 
 
     static function getConnection()
