@@ -3,7 +3,15 @@
 - O site tem como principal funcionalidade calcular a emissão pessoal e familiar de gás carbônico emitido na atmosféra
 
 ## Tecnologias utilizadas
-- **HTML**: Linguagem de marcação de hipertexto
+- **HTML**: Linguagem de marcação de hipertexto e tags semânticas
 - **CSS**: Linguagem de estilo em cascata
 - **JavaScript**: Linguagem de programação que o próprio navegador interpreta
 - **PHP**: Linguagem de programação que é diretamente interpretada no servidor
+- **PWA** - Progressive Web Application foi utilizado
+- **Composer**
+- **MVC** - Model View Controller foi utilizado
+- **Singleton**
+- **Factory Method**
+- **Bootsrap**: Site responsível
+- **Orientação a objetos**
+- **Hospedagem na Azure**
