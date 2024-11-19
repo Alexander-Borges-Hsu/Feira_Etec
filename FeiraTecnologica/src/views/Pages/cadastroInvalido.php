@@ -12,7 +12,6 @@
 
 </head>
 
-<!-- Teste -->
 <body>
   <section class="hero">
     <div class="hero-content">

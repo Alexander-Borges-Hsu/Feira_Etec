@@ -38,9 +38,11 @@ class cadUser
         if ($stmt->rowCount() > 0) {
             header("Location: ../src/views/Pages/cadastroInvalido.php");
         } else {
+            $defaultId = 1;
             // Lógica de inserção no banco de dados
             $senha = password_hash($recebeSenha, PASSWORD_DEFAULT);
-            $stmt = $this->pdo->prepare("INSERT INTO tbnew_usuario (newusuario, newsenha, newemail) VALUES (:nome_usuario, :senha, :email)");
+            $stmt = $this->pdo->prepare("INSERT INTO tbnew_usuario (idUsuario, newusuario, newsenha, newemail) VALUES (:idUsuario, :nome_usuario, :senha, :email)");
+            $stmt->bindParam(':idUsuario', $defaultId);
             $stmt->bindParam(':nome_usuario', $recebeUser);
             $stmt->bindParam(':senha', $senha);
             $stmt->bindParam(':email', $recebeEmail);
