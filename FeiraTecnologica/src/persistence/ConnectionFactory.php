@@ -11,7 +11,6 @@ class ConnectionFactory
     private static $db_password = "VCalc2048@";
     private static $conn = null;
 
-
     static function getConnection()
     {
         $connectionString = "mysql:host=" . self::$db_host . ";dbname=" . self::$db_name . ";dbport=" . self::$db_port;

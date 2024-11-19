@@ -1,6 +1,5 @@
 <?php
 include('./src/controller/APP_controller.php');
-//Usar o MainCadastro caso o controller não funcione
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
