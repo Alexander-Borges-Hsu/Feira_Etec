@@ -22,6 +22,7 @@ include('./src/controller/APP_controller.php');
     <!-- Importação de scripts do Bootstrap para funcionalidades JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./src/views/Script/script.js"></script>
+    <script>console.log("Teste"); </script>
 </head>
 
 <body class="index">
