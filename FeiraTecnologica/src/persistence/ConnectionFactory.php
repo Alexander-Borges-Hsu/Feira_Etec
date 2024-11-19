@@ -3,7 +3,18 @@ namespace APP\persistence;
 
 class ConnectionFactory
 {
+/*      
+        IMPORTANTE!
 
+   Alterações para conseguir abrir a porta pelo cmd e mudar o site:
+   
+  1 - Mude o host para "127.0.0.1"
+  2 - Mude o username para "root"
+  3 - Deixe o password vazio, somente ""
+  
+  NÃO ESQUEÇA DE RETORNAR PARA AS CONFIGURAÇÕES INICIAIS ANTES DE REALIZAR O GIT PUSH, SE NÃO VC DERRUBA O SITE!
+
+*/
     private static $db_name = "bdlogin";
     private static $db_host = "bd-verdecalc.mysql.database.azure.com";
     private static $db_port = "3306";
@@ -21,7 +32,6 @@ class ConnectionFactory
         }
 
         return self::$conn;
-
 
     }
 
