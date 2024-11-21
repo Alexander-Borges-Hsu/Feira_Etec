@@ -1,0 +1,112 @@
+body {
+    background-image: url('./../imagens/selvas-plantas.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0; 
+}
+
+.titulo_quem_somos {
+    text-align: center;
+    color: white;
+    margin-top: 20pt;
+    margin-bottom: 5pt;
+    font-size: 2em; 
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    margin-top: 20pt;
+    width: 100%; 
+    max-width: 800px; 
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    box-sizing: border-box; 
+}
+
+.subtitulo {
+    color: white;
+    margin-left: 5pt;
+}
+
+.texto {
+    color: white;
+    text-align: justify;
+    margin-left: 0; 
+    margin-right: 20px; 
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 10px; 
+    }
+
+    .container {
+        width: 100%; 
+        padding: 10px; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .texto {
+        font-size: 1em; 
+        margin-left: 0; 
+        margin-right: 0;
+    }
+
+    .titulo_quem_somos {
+        font-size: 1.5em;
+    }
+
+    .subtitulo {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .texto {
+        font-size: 1.1em;
+    }
+
+    .titulo_quem_somos {
+        font-size: 1.7em;
+    }
+
+    .subtitulo {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 900px; 
+        padding: 30px;
+    }
+
+    .texto {
+        font-size: 1.3em; 
+    }
+
+    .titulo_quem_somos {
+        font-size: 2em;
+    }
+
+    .subtitulo {
+        font-size: 1.2em;
+    }
+}
