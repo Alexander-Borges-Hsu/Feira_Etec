@@ -17,3 +17,4 @@
 - **Hospedagem na Azure**
 - **Git Hub**: pra trabalhar no código do projeto
 - **Figma**: Pra pré visualização do Front-end do projeto
+- **SQL**
