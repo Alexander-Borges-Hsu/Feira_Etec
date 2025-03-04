@@ -16,10 +16,10 @@ class ConnectionFactory
 
 */
     private static $db_name = "bdlogin";
-    private static $db_host = "bd-verdecalc.mysql.database.azure.com";
+    private static $db_host = "127.0.0.1";
     private static $db_port = "3306";
-    private static $db_username = "alexanderVC";
-    private static $db_password = "VCalc2048@";
+    private static $db_username = "root";
+    private static $db_password = "";
     private static $conn = null;
 
     static function getConnection()

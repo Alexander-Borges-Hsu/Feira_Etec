@@ -1,92 +1,77 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(2, 31, 2);
-  color: white;
-  overflow-x: hidden;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
 }
 
-header {
-  background-color: #1e2f28;
-  padding: 20px;
-  text-align: left;
-  position: sticky;
-  top: 0;
-}
-
-header img {
-  height: 50px;
-}
-
-.hero {
-  background-image: url("./../imagens/selva.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
+video{
+  width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  object-fit: cover;
+}
+
+header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: #fff;
   text-align: center;
-  padding: 20px;
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin: 0;
+header h1{
+  font-weight: 500;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
-.hero p {
-  font-size: 1.2em;
-  margin-top: 10px;
-  max-width: 600px;
+header span{
+  font-weight: 800;
+  font-size: 7rem;
+  display: block;
 }
 
-.btn {
-  background-color: #39806a;
-  padding: 15px 30px;
+.descricao{
+  position: absolute;
+  bottom: 2%;
+  width: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  opacity: 0.7;
+  padding: 1.5rem;
+  padding: 60px;
+}
+
+.descricao p{
+  text-align: justify;
+  max-width: 42rem;
+  margin-inline: auto;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-bottom: 40px;
+}
+
+.btn{
+  background: linear-gradient(to right, #267036, #55a544);
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px 45px; 
+  border: 1px solid transparent;
   border-radius: 8px;
-  color: white;
-  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 30%;
   text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
 }
 
-.btn:hover {
-  background-color: #2f6b58;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5em;
-  }
-
-  .hero p {
-    font-size: 1em;
-    max-width: 90%;
-  }
-
-  .btn {
-    padding: 12px 24px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero h1 {
-    font-size: 2em;
-  }
-
-  .hero p {
-    font-size: 0.9em;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-}
