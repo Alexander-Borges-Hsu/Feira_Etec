@@ -1,26 +1,26 @@
-<?php
-include('./src/controller/APP_controller.php');
-?>
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="src\views\imagens\imagem.png">
-    <title>VerdeCalc</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./src/views/Style/style.css">
-</head>
-<body>    
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{-- Colocar Icon --}}
+        <title>VerdeCalc</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="/css/Style.css">
+    </head>
+    <body>
     <div class="container" id="container">
         <div class="formulario-container registro">
-            <form>
+            <form action="/events" method="POST">
+                @csrf
                 <h1>Crie sua conta</h1>
-                <span>Use seu email para se registrar</span>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <button>Registrar</button>
+                <input type="text" placeholder="Nome" id="nome" name="nome">
+                <input type="email" placeholder="Email" id="email" name="email">
+                <input type="password" placeholder="Senha" id="senha" name="senha">
+                <input type="password" placeholder="Confirme sua senha" id="confirmSenha" name="confirmSenha">
+                <input type="text" placeholder="CNPJ" id="cnpj" name="cnpj">
+                <input type="submit" value="Registrar" id="registrar">
+                
             </form>
         </div>
         <div class="formulario-container logar">
@@ -48,8 +48,6 @@ include('./src/controller/APP_controller.php');
     </div>
 
 
-<script src="./src/views/Script/script_index.js"></script>
-</body>
+    <script src="js/script_index.js"></script>
+    </body>
 </html>
-
-
