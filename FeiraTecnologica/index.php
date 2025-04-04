@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{-- Colocar Icon --}}
+        <link rel="icon" href="src/views/imagens/imagem.png">
         <title>VerdeCalc</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="src/views/Style/style.css">
@@ -12,14 +12,14 @@
     <div class="container" id="container">
         <div class="formulario-container registro">
             <form action="/events" method="POST">
-                @csrf
+                
                 <h1>Crie sua conta</h1>
                 <input type="text" placeholder="Nome" id="nome" name="nome">
                 <input type="email" placeholder="Email" id="email" name="email">
                 <input type="password" placeholder="Senha" id="senha" name="senha">
                 <input type="password" placeholder="Confirme sua senha" id="confirmSenha" name="confirmSenha">
                 <input type="text" placeholder="CNPJ" id="cnpj" name="cnpj">
-                <input type="submit" value="Registrar" id="registrar">
+                <input type="submit" value="Registrar" id="registrar" class="botao-input">
                 
             </form>
         </div>

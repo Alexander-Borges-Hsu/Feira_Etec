@@ -1,130 +1,157 @@
-/* CSS Geral */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-}
-
-body,
-html {
-    height: 100%;
-    font-family: "Kurale", serif;
-    color: white;
-    background-color: black;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-image: url('./../imagens/selvas-plantas.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    color: white;
-    overflow-x: hidden;
-    min-height: 100vh;
-    /* Garante que o body ocupe no mínimo 100% da altura da tela */
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.header-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 30px;
+    border-bottom: 3px solid #4CAF50;
 }
 
-html {
-    height: 100%;
-    /* Garante que o HTML ocupe 100% da altura */
-    overflow-y: auto;
-    /* Permite a rolagem vertical */
+h1 .verde { 
+    color: #4CAF50; font-weight: bold; 
 }
 
-
-h1,
-h2,
-label {
-    color: #ffffff;
-    /* Garante que os títulos e labels estejam brancos */
+h1 .calc { 
+    color: black; font-weight: bold; 
 }
 
-
-.container {
-    padding: 20px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Estilo dos blocos de formulário */
-.consumo {
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Fundo preto com opacidade */
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.form-container {
+    background: white;
     padding: 30px;
+    margin: 40px auto; /* Remove a centralização */
+    width: 75%;
     border-radius: 10px;
-    text-align: center;
-    color: white;
-    margin-bottom: 30px;
-    /* Espaçamento entre os blocos */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    /* Sombra para destaque */
-    animation: slideIn 0.6s ease-out;
-    /* Aplica a animação ao formulário */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid #28a745;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
-    color: white;
+.form-container h2, .form-container h3 {
+    color: #333;
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="number"] {
-    width: 90%;
-    /* Ajuste para ocupar 90% da largura do bloco */
-    max-width: 300px;
-    /* Limita o tamanho máximo */
+input {
+    width: 100%;
     padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    border: none;
-    margin: 10px auto 15px;
-    /* Espaçamento e centralização */
-    display: block;
-    /* Centralização no bloco */
-    color: black;
 }
 
-button[type="submit"] {
-    padding: 10px 20px;
+.li1{
+    margin-right: 50px;
+}
+
+.li2{
+    margin-right: 30px;
+}
+
+.li3{
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.buttons label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1px 20px;
+    border: 2px solid #000;
     border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    transition: 0.3s;
+}
+
+.buttons input{
+    display: none;
+}
+
+.buttons input[type="radio"]:checked + label {
+    background-color: #007bff;
+    border-color: #007bff;
     color: white;
-    background-color: #00cc66;
-    border: none;
+}
+
+.buttons input[type="radio"]:checked + label[for*="sim"] {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.buttons input[type="radio"]:checked + label[for*="nao"] {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+
+.buttons input[type="checkbox"]:checked + label {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+
+
+.busque{
+    color: #28a745;
+}
+
+nav ul li a {
+    font-size: 18px; 
+    font-weight: bold;
+    color: black; 
+    text-transform: uppercase; 
+    padding: 10px 15px; 
+    transition: 0.3s; 
+}
+
+.titulo{
+    margin-bottom: 20px;
+}
+
+.subtitulo{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 576px) {
-    .consumo {
-        padding: 20px;
-        margin: 10px 0;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-}
