@@ -172,3 +172,56 @@ nav ul li a {
     text-align: center;
     height: 50px;
 }
+
+/* responsividade */
+
+@media (max-width: 1024px) {
+    .header-form{
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 15px;
+    }
+
+    nav ul {
+       flex-direction: column;
+       gap: 10px;
+       padding: 0;
+    }
+
+    .usuario {
+       align-self: flex-end;
+    }
+
+    .form-container {
+       width: 90%;
+       padding: 20px;
+    }
+    .buttons label {
+       width: 100%;
+       text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+   .header-form {
+       padding: 10px 15px;
+   }
+
+   nav ul li a {
+       font-size: 16px;
+       padding: 8px 12px;
+   }
+
+   .form-container {
+       width: 95%;
+       margin: 20px auto;
+   }
+
+   h1 .calc, h1 .verde {
+       font-size: 22px;
+   }
+
+   input {
+       font-size: 16px;
+   }
+}
