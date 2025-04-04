@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../Style/styleTelaInicial.css">
 </head>
 <body>
-    <?php include('../AppView/Aside.php'); ?>
+   
     
     <div class="container">
         <video src="../imagens/back-video-compressed.mp4" autoplay loop playsinline muted></video>

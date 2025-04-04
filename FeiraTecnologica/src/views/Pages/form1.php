@@ -116,6 +116,8 @@
                     <input type="radio" id="combustivel_fossil" name="matriz_energetica" value="Combustivel_Fossil">
                     <label for="combustivel_fossil">Combustível Fóssil</label>
                 </div>
+                <br>
+                <input type="submit" value="Registrar" id="registrar" class="botao-input">
             </form>
         </section>
     </main>
