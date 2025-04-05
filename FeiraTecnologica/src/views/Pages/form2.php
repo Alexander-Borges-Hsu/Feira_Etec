@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -22,72 +22,58 @@
 </head>
 
 <body>
-  <?php
-  include('../AppView/NavBar.php');
-  ?>
+<header class="header-form">
+  <h1><span class="verde">Verde</span><span class="calc">Calc</span></h1>
+    <nav>
+      <ul>
+          <li><a href="#">Objetivo</a></li>
+          <li><a href="#" class="busque">Busque Mudança</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+      </ul>
+    </nav>
+        <div class="usuario">
+            <div class="icon"></div>
+            <span>Olá, Usuário</span>
+        </div>
+    </header>
+    <main>
+      <h1 class="titulo">NOTÍCIAS E ACONTECIMENTOS ATUAIS.</h1>
+    <div class="container">
+  <div class="card">
+    <div class="categoria-noticias">
+      <a href="https://www.cnnbrasil.com.br/internacional/aquecimento-global-tornara-cidades-quentes-demais-para-olimpiadas-ate-2050/" target="_blank">
+        <img src="../imagens/mudancas-climaticas.webp" alt="Notícia" class="noticia-img">
+      </a>
+    </div>
+    <h2>Aquecimento global tornará cidades quentes demais para Olimpíadas até 2050</h2>
+    <p>Descrição curta da notícia...</p>
+  </div>
 
-  <main>
-    <h1 class="titulo">Transportes Individuias</h1>
+  <div class="card">
+    <div class="categoria-noticias">
+      <a href="URL_DA_NOTICIA" target="_blank">
+        <img src="IMAGEM_DA_NOTICIA" alt="Notícia" class="noticia-img">
+      </a>
+    </div>
+    <h2>Título da Notícia</h2>
+    <p>Descrição curta da notícia...</p>
+  </div>
 
-    <section class="transporte-individual">
-      <h2>Escolha seu meio de Transporte</h2>
-
-      <div class="escolha-veiculo">
-
-        <!--Botão do carro-->
-        <button id="carro-btn">
-          <img src="./../imagens/carro2.jpg" alt="Carro">
-          <p>Carro</p>
-        </button>
-
-        <!-- Botão Ambos -->
-        <button id="ambos-btn">
-          <img src="./../imagens/ambos.png" alt="Ambos">
-          <p>Ambos</p>
-        </button>
-
-        <!--Botão da Moto-->
-        <button id="moto-btn">
-          <img src="./../imagens/moto-png-certa.png" alt="Moto">
-          <p>Moto</p>
-        </button>
-      </div>
-
-      <!--O form abaixo diz sobre os espaços para preencher abaixo dos botoes carro e moto-->
-
-      <!--Campo onde informa, qual tipo de combustivel será usado trazendo tres opções Gasolina, Gás Natural, Diesel-->
-
-      <form id="formulario" class="informacoes-complementares" action="../../../index.php" method="POST">
-        <input type="text" name="k" value="CCL" style="display: none;">
-        <label for="combustivel">Combustível utilizado:</label>
-        <select id="combustivel" name="combustivel" required placeholder="a">
-          <option value="gasolina">Gasolina</option>
-          <option value="gas_natural">Gás Natural</option>
-          <option value="diesel">Diesel</option>
-          <option value="nao-sei">Não sei informar</option>
-        </select>
-
-        <!--Campo onde informa, quantos kms o user rodou por dia-->
-
-        <label for="kms">Kms Rodados Por Dia (Digite 0 caso não utilize):</label>
-        <input type="number" id="kms" name="kmdia" required>
-
-        <!--Dar proximo, e ir a proximo formulario-->
-        <button type="submit">Próximo</button>
-
-      </form>
-    </section>
-  </main>
-
-  <?php
+  <div class="card">
+    <div class="categoria-noticias">
+      <a href="URL_DA_NOTICIA" target="_blank">
+        <img src="IMAGEM_DA_NOTICIA" alt="Notícia" class="noticia-img">
+      </a>
+    </div>
+    <h2>Título da Notícia</h2>
+    <p>Descrição curta da notícia...</p>
+  </div>
+</div>
+</main>
+<?php
   include('../AppView/Footer.php');
-  ?>
+?>
 
-
-
-
-  <script src="./../Script/script.js"></script>
-
+<script src="./../Script/script.js"></script>
 </body>
-
 </html>

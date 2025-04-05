@@ -56,7 +56,7 @@ nav ul li a {
 .form-container {
     background: white;
     padding: 30px;
-    margin: 40px auto; /* Remove a centralização */
+    margin: 40px auto; 
     width: 75%;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -130,8 +130,6 @@ input {
     border-color: #007bff;
     color: white;
 }
-
-
 
 .busque{
     color: #28a745;
