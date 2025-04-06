@@ -17,7 +17,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
     <header class="header-form">
         <h1><span class="verde">Verde</span><span class="calc">Calc</span></h1>
         <nav>
@@ -32,8 +31,11 @@
             <span>Olá, Usuário</span>
         </div>
     </header>
-   
+    <?php
+    //include('../AppView/Aside.php');
+    ?>
     <main>
+    
         <section class="form-container">
             <h2 class="titulo">Olá empreendedor(a), antes de começarmos, insira algumas informações empresariais.</h2>
             <form>
@@ -124,6 +126,7 @@
     <?php
     include('../AppView/Footer.php');
     ?>
+    <script src="../Script/script_aside.js"></script>
 </body>
 
 </html>

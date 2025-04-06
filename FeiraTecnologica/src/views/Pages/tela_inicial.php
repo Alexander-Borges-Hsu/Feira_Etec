@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../imagens/imagem.png">
   <title>VerdeCalc</title>
-  <link rel="stylesheet" href="../Style/style_aside.css">
+  
   <link rel="stylesheet" href="../Style/styleTelaInicial.css">
 </head>
 <body>
    <?php
-   include('../AppView/Aside.php');
+   //include('../AppView/Aside.php');
    ?>
-    <div class="container">
+    
         <video src="../imagens/back-video-compressed.mp4" autoplay loop playsinline muted></video>
         
         <header>
             <h1>Bem-vindo à <span>VerdeCalc</span></h1>
         </header>
-
+        <main>
         <div class="descricao">
             <p>
                 Bem-vindo à VerdeCalc! Experimente nossa Calculadora de Carbono, uma ferramenta que estima as emissões de CO₂ geradas por atividades como transporte e consumo de energia.
@@ -26,7 +26,7 @@
             </p>
             <a href="../../../index.php?m=form1&k=RDCT" class="btn">Comece Agora</a>
         </div>
-    </div>
+    </main>
     <script src="../Script/script_aside.js"></script>
 </body>
 </html>

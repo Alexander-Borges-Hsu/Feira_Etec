@@ -1,77 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  overflow: hidden;
+  background-color: #000;
+  color: #fff;
 }
 
-video{
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  z-index: -1; 
 }
 
-header{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  color: #fff;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 50px 20px;
 }
 
-header h1{
+header h1 {
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 1.2;
+  margin: 0;
 }
 
-header span{
+header span {
   font-weight: 800;
-  font-size: 7rem;
+  font-size: 5rem;
   display: block;
+  margin-top: 10px;
 }
 
-.descricao{
-  position: absolute;
-  bottom: 2%;
-  width: 40%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: #000;
+.descricao {
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   border-radius: 20px;
-  opacity: 0.7;
-  padding: 1.5rem;
-  padding: 60px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  align-items: center;
 }
 
-.descricao p{
+.descricao p {
   text-align: justify;
-  max-width: 42rem;
-  margin-inline: auto;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: 0.5px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-.btn{
+.btn {
+  display: inline-block;
   background: linear-gradient(to right, #267036, #55a544);
   color: #ffffff;
-  font-size: 12px;
-  padding: 10px 45px; 
-  border: 1px solid transparent;
+  font-size: 14px;
+  padding: 10px 30px;
+  border: none;
   border-radius: 8px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin-top: 10px;
-  cursor: pointer;
-  margin-left: 30%;
   text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 34%;
 }
 
+/* Responsividade */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  header span {
+    font-size: 4rem;
+  }
+
+  .descricao {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header span {
+    font-size: 3rem;
+  }
+
+  .descricao {
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  header span {
+    font-size: 2.5rem;
+  }
+
+  .descricao {
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+}

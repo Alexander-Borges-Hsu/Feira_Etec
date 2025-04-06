@@ -187,7 +187,12 @@ nav ul li a {
     }
 
     .usuario {
-       align-self: flex-end;
+       align-self: flex-start;
+       margin-top: 10px;
+    }
+
+    .icon {
+        margin-left: 0;
     }
 
     .form-container {
