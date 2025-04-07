@@ -21,9 +21,9 @@
         <h1><span class="verde">Verde</span><span class="calc">Calc</span></h1>
         <nav>
             <ul>
-                <li><a href="#">Objetivo</a></li>
-                <li><a href="#" class="busque">Busque Mudança</a></li>
-                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="busque">Calculadora</a></li>
+                <li><a href="#">Notícias</a></li>
             </ul>
         </nav>
         <div class="usuario">
